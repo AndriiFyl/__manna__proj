@@ -1,0 +1,21 @@
+.container {
+    height: 58px;
+    display: flex;
+    padding-left: 120px;
+    padding-right: 120px;
+    align-items: center;
+    background-image: linear-gradient(rgba(157, 177, 162, 1) rgba(100, 121, 100, 1));
+}
+
+
+.navigation__wrapper {
+    display: flex;
+}
+
+.navigation__list {
+    display: flex;
+}
+
+.additional__functions {
+    display: flex;
+}
