@@ -1,15 +1,16 @@
-html {
+
+* {
     box-sizing: border-box;
+}
+
 
 
 
 body {
     margin: 0;
-    font-family: var(--main-font);
-    color: var(--primary-text-color);
-    background-color: var(--primary-background-color);
+    font-family:'Montserrat',  sans-serif;
+    background-color: rgba(254, 250, 224, 1);
 }
 
 
 
-}

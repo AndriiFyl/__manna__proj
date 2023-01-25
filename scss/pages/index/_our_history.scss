@@ -1,0 +1,75 @@
+.our_history {
+    height: 950px;
+    position: relative;
+    display: flex;
+}
+
+.text_history_wrapper {
+    width: 850px;
+    margin-left: 120px;
+}
+
+.our_history__title {
+    font-family: 'Cormorant';
+    font-size: 82px ;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 45px;
+}
+
+.our_history__text {
+    font-size: 22px;
+    font-weight: 300;
+    line-height: 1.2;
+    margin-bottom: 30px;
+}
+
+.text__second {
+    margin-bottom: 100px;
+}
+
+
+.losung__wrapper {
+    width: 438px;
+    text-align: center;
+    margin-left: 316px;
+}
+
+.our_history_losung {
+    font-family: 'Cormorant';
+    font-size: 42px;
+    font-weight: 600;
+    line-height: 1.2;
+    color: rgba(34, 34, 34, 1);
+    text-align: center;
+    margin-bottom: 150px;
+}
+
+.our_history__btn_about_us {
+    width: 300px;
+    height: 75px;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.2;
+    color: rgba(34, 34, 34, 1);
+    background-color: rgba(245, 194, 101, 1);
+    border: 1px solid rgba(153, 153, 153, 1);
+
+}
+
+.dish__left__img {
+    position: absolute;
+    top: 434px;
+}
+
+.interior__img {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.dish__right__img {
+    position: absolute;
+    bottom: 0;
+    right: 437px;
+}

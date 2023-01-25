@@ -5,40 +5,49 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>MANNA|RESTAURANT</title>
-     <link rel="stylesheet" href="./css/main.min.css" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Chonburi&family=Cormorant:wght@300;400;600;700&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+
+
+
+<link rel="stylesheet" href="./css/main.min.css" />
+     
   </head>
   <body>
+    <div class="container">
     <header>
+      
       <div class="header__container container">
-        <div class="restaurant__logo">
-          <a class="navigation__logo" href="./index.html">MANNA</a>
+        <div class="restaurant__logo__wrapper">
+          <a class="restaurant__logo" href="./index.html">MANNA</a>
         </div>
         <div class="navigation__wrapper">
           <ul class="navigation__list">
-            <li>
-              <a class="menu__link" href="./menu.html">Menu</a>
+            <li class="navigation__item">
+              <a class="menu__link nav__link" href="./menu.html">Menu</a>
             </li>
-            <li><a class="about__us__link" href="./about.html">About us</a></li>
-            <li>
-              <a class="contacts__link" href="./contacts.html">Contacts</a>
+            <li  class="navigation__item"><a class="about__us__link nav__link" href="./about.html">About us</a></li>
+            <li  class="navigation__item">
+              <a class="contacts__link nav__link" href="./contacts.html">Contacts</a>
             </li>
-            <li>
-              <a class="dilivery_payment__link" href="./delivery_payment.html"
+            <li  class="navigation__item">
+              <a class="dilivery_payment__link nav__link" href="./delivery_payment.html"
                 >Delivery&Payment</a
               >
             </li>
           </ul>
         </div>
 
-        <div class="additional__functions">
+        <div class="additional__functions__wrapper">
        <select class="change__lang">
-        <option value="en">EN</option>
-        <option value="esp">ESP</option>
+        <option class="lang" value="en">EN</option>
+        <option  class="lang" value="esp">ESP</option>
        </select>
 
 <form class="search__form" name="search__form" method="post">
-    <div class="input__wrapper">
-    
+  
     <input class="input__field" type="text" name="search__input" placeholder="Search"/>
             
             <button class="btn__search" type="submit">
@@ -46,18 +55,69 @@
                 <use href="./images/sprite-icons.svg#icon-search__lens"></use>
                   </svg>
             </button>
-            </div>
+  
             </form>
 
-            <svg class="icon icon-shop-basket" width="20px" height="27px">
+            <svg class="icon icon-shop-basket" width="31px" height="30px">
                 <use href="./images/sprite-icons.svg#icon-shop-basket"></use>
             </svg>
 
-            <button type="button" class="btn__reservation">Reservation</button>
+            <button type="button" class="btn__reservation">RESERVATION</button>
           </div>
        </div>
         </div>
       </div>
     </header>
+
+  <section class="hero__section container">
+    <h1 class="hero__tilte">
+    <span class="title__welcome_to">Welcome to</span></br>
+    <span class="title__main">MANNA</span> </br>
+    <span class="title__main">RESTAURANT</span>
+    </h1>
+    <div class="hero__btn-wrapper">
+    <button class="hero__btn hero__btn-menu">Menu</button>
+    <button class="hero__btn hero__btn-reserve">Reserve a table</button>
+</div>
+  </section>
+
+
+  <section class="our_history container">
+  <div class="our_history__left_part">
+    <div class="text_history_wrapper">
+      <h2 class="our_history__title">OUR HISTORY</h2>
+      <p class="our_history__text text__first">Joseph and Jonathan Belford established their first restaurant named MANNA in 2022 in New Orleans, Louisiana. From the very first day, the new restaurant in the city was popular. It was different from other restaurants in that area, which the residents and tourists were used to seeing.</p></br>
+      <p class="our_history__text text__second">The restaurant instantly became the hallmark of Annunciation Street. The quality of the products, the variety of the menu, and the fastest delivery in the city made the restaurant famous throughout New Orleans.</p>
+    </div>
+         <img
+                class="dish__left__img"
+                src="./images/our_history/dish_left.jpg"
+                alt="dish"
+                width="242px" 
+                loading="lazy" />
+      <div class="losung__wrapper">
+      <p class="our_history_losung">“It's essential to have a feelings for either the food or the restaurant where you are eating.”</p>
+      <button class="our_history__btn_about_us">About us</button>
+      </div>
+      </div>
+
+      <div class="our_history__right part_part">
+         <img
+                class="interior__img"
+                src="./images/our_history/interior.jpg"
+                alt="interior"
+                width="688px" 
+                loading="lazy" />
+
+                 <img
+                class="dish__right__img"
+                src="./images/our_history/dish_right.jpg"
+                alt="dish"
+                width="535px" 
+                loading="lazy" />
+
+      </div>
+  </section>
+  </div>
   </body>
 </html>
