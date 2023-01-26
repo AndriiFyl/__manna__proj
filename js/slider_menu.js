@@ -21,7 +21,7 @@ document.querySelector('.btn__arrow_left').addEventListener('click', function ()
     offset -= 520;
     sliderLine.style.left = offset + 'px';
         if (offset < 0) {
-        offset = (quontityImg * 520) - 520;
+        offset = (quontityImg * 520) - 1560;
     }
     sliderLine.style.left = - offset + 'px';
 });
