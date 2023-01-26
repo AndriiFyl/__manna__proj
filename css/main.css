@@ -178,7 +178,7 @@ input {
   background-size: cover;
   background-position: center;
   background-color: rgb(216, 213, 196);
-  background-image: url("../images/hero.jpg");
+  background-image: url("../../../images/hero.jpg");
 }
 
 .title__welcome_to {
