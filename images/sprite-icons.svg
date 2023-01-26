@@ -9,6 +9,12 @@
 <path fill="none" stroke="#f5c265" style="stroke: var(--color1, #f5c265)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2.1333" d="M15.135 16.813v5.024"></path>
 <path fill="none" stroke="#f5c265" style="stroke: var(--color1, #f5c265)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2.1333" d="M20.901 16.813v5.024"></path>
 </symbol>
+<symbol id="icon-Arrow-left-MENU" viewBox="0 0 200 32">
+<path fill="#849d8a" style="fill: var(--color1, #849d8a)" d="M2.586 17.414c-0.781-0.781-0.781-2.047 0-2.828l12.728-12.728c0.781-0.781 2.047-0.781 2.828 0s0.781 2.047 0 2.828l-11.314 11.314 11.314 11.314c0.781 0.781 0.781 2.047 0 2.828s-2.047 0.781-2.828 0l-12.728-12.728zM200 18h-196v-4h196v4z"></path>
+</symbol>
+<symbol id="icon-Arrow-right-Menu" viewBox="0 0 200 32">
+<path fill="#849d8a" style="fill: var(--color1, #849d8a)" d="M197.414 17.414c0.781-0.781 0.781-2.047 0-2.828l-12.728-12.728c-0.781-0.781-2.048-0.781-2.828 0s-0.781 2.047 0 2.828l11.314 11.314-11.314 11.314c-0.781 0.781-0.781 2.047 0 2.828s2.047 0.781 2.828 0l12.728-12.728zM0 18h196v-4h-196v4z"></path>
+</symbol>
 </defs>
 </svg>
 

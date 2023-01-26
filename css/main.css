@@ -229,6 +229,7 @@ input {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-bottom: 100px;
 }
 
 .text_history_wrapper {
@@ -297,4 +298,89 @@ input {
   position: absolute;
   bottom: 0;
   right: 437px;
+}
+
+.menu__section {
+  margin-bottom: 100px;
+}
+
+.menu_dishes__wrapper {
+  min-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 90px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+.container__slider {
+  min-width: 1440px;
+  margin-left: 190px;
+  overflow: hidden;
+}
+
+.slider {
+  width: 400px;
+  height: 490px;
+}
+
+.menu__slider-line {
+  height: 490px;
+  width: 1440px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  gap: 118px;
+  left: 0;
+  -webkit-transition: all ease 500ms;
+  transition: all ease 500ms;
+}
+
+.btn__arrow_right {
+  position: absolute;
+  top: 50%;
+  right: 0;
+}
+
+.menu__title {
+  font-family: "Cormorant";
+  font-size: 82px;
+  font-weight: 700;
+  line-height: 1.2;
+  color: rgb(34, 34, 34);
+  margin-bottom: 45px;
+}
+
+.menu__btn_menu {
+  width: 300px;
+  height: 75px;
+  text-align: center;
+  background-color: rgb(245, 194, 101);
+  border: 1px solid rgb(153, 153, 153);
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  margin-bottom: 100px;
+}
+
+.special-dishes__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.btn_slider {
+  background-color: transparent;
 }/*# sourceMappingURL=main.css.map */
