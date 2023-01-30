@@ -1,0 +1,119 @@
+.reservation_section {
+    margin-bottom: 100px;
+    
+}
+.reservation_wrapper {
+    padding-left: 120px;
+    padding-right: 170px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+   
+}
+
+.reservation_title {
+    font-family: 'Cormorant';
+    font-size: 82px;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 45px;
+    margin-left: 120px;
+}
+
+.fork_img {
+    position: absolute;
+    top: -170px;
+    left: 960px;
+}
+
+.reserve_form {
+    width: 1008px;
+    height: 500px;
+    border: 2px solid rgba(90, 110, 90, 1);
+    border-radius: 10px;
+    padding-left: 70px;
+    padding-right: 70px;
+    padding-top: 50px;
+    position: absolute;
+    background-color: rgba(254, 250, 224, 1);
+}
+
+.empty_block {
+    width: 1008px;
+    height: 500px;
+}
+
+.inputs_wrapper {
+    display: flex;
+}
+
+.inputs_group {
+    border: none;
+    width: 402px;
+}
+
+.reservation_input {
+    width: 402px;
+    margin-bottom: 40px;
+    height: 65px;
+    padding-left: 13px;
+    padding-right: 35px;
+    border-radius: 5px;
+    border: 1px solid rgba(132, 157, 138, 1);
+    font-size: 20px;
+}
+
+.reservation_input::placeholder {
+    font-size: 16px;
+    line-height: 1.2;
+    font-family: 'Montserrat';
+}
+
+.btn_submit_form_reservation {
+    width: 300px;
+    height: 75px;
+    background-color: rgba(252, 185, 63, 1);
+    border: 1px solid rgba(153, 153, 153, 1);
+    border-radius: 10px;
+    font-size: 20px;
+        font-weight: 700;
+        line-height: 1.2;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+}
+
+.title_schedule {
+font-family: 'Cormorant';
+font-size: 60px;
+font-weight: 700;
+line-height: 1.2;
+margin-bottom: 35px;
+
+}
+
+.schedule_item:not(:last-child) {
+    margin-bottom: 35px;
+}
+
+.works_days {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 1.2;
+    margin-bottom: 8px;
+}
+
+
+.works_hours {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 1.2;
+}
+
+.works_hours:not(:last-child) {
+    margin-bottom: 3px;
+}
+
+
+
+
