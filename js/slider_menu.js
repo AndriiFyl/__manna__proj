@@ -2,11 +2,11 @@
 let offset = 0;
 // получаем доступ к елементу
 const sliderLine = document.querySelector('.menu__slider-line');
-// получаем доступ к кнопке
+
 
 const quontityImg = document.querySelectorAll(".menu__img").length;
 console.log(quontityImg);
-
+// получаем доступ к кнопке
 document.querySelector('.btn__arrow_right').addEventListener('click', function () {
     offset += 520;
     sliderLine.style.left = offset + 'px';

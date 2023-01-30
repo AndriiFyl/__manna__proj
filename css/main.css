@@ -178,7 +178,7 @@ input {
   background-size: cover;
   background-position: center;
   background-color: rgb(216, 213, 196);
-  background-image: url("../images/hero.jpg");
+  background-image: url("../../../images/hero.jpg");
 }
 
 .title__welcome_to {
@@ -304,6 +304,10 @@ input {
   margin-bottom: 100px;
 }
 
+.menu__title {
+  padding-left: 120px;
+}
+
 .menu_dishes__wrapper {
   min-width: 1440px;
   margin-left: auto;
@@ -383,4 +387,156 @@ input {
 
 .btn_slider {
   background-color: transparent;
+}
+
+.terms_of_delivery__section {
+  padding-left: 120px;
+  padding-right: 120px;
+  margin-bottom: 100px;
+}
+
+.terms_description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 1680px;
+  position: relative;
+}
+
+.terms_title {
+  font-family: "Cormorant";
+  font-weight: 700;
+  font-size: 82px;
+  line-height: 1.2;
+  margin-bottom: 45px;
+}
+
+.delivery_wrapper_left {
+  width: 688px;
+}
+
+.text_description {
+  font-size: 22px;
+  font-weight: 300;
+  line-height: 1.2;
+}
+
+.text_description:not(:last-child) {
+  margin-bottom: 35px;
+}
+
+.text_description:last-child {
+  margin-bottom: 90px;
+}
+
+.terms_losung {
+  display: block;
+  width: 546px;
+  font-family: "Cormorant";
+  font-size: 42px;
+  font-weight: 600;
+  line-height: 1.2;
+  margin-bottom: 90px;
+}
+
+.btn_delivery-payment {
+  width: 300px;
+  height: 75px;
+  border: 1px solid rgb(34, 34, 34);
+  background-color: rgb(210, 205, 205);
+  border-radius: 5px;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+.icon_wrapper {
+  width: 350px;
+  height: 290px;
+  background-color: rgb(240, 240, 240);
+  border: 1px solid grey;
+  text-align: center;
+}
+
+.wrapper_order {
+  position: absolute;
+  right: 547px;
+  top: 0;
+}
+
+.wrapper_payment {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.wrapper_packing {
+  position: absolute;
+  right: 742px;
+  top: 390px;
+}
+
+.wrapper_delivery {
+  position: absolute;
+  top: 390px;
+  right: 192px;
+}
+
+.delivery_number_step {
+  font-family: "Cormorant";
+  font-size: 82px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.step_01 {
+  position: absolute;
+  right: 500px;
+  top: -55px;
+}
+
+.step_02 {
+  position: absolute;
+  right: 349px;
+  top: 190px;
+}
+
+.step_03 {
+  position: absolute;
+  right: 693px;
+  top: 312px;
+}
+
+.step_04 {
+  position: absolute;
+  right: 126px;
+  top: 485px;
+}
+
+.icon {
+  margin-bottom: 20px;
+}
+
+.icon-order, .icon-payment {
+  margin-top: 37px;
+}
+
+.icon-packing, .icon-delivery {
+  margin-top: 27px;
+}
+
+.title_delivery_step {
+  margin-bottom: 15px;
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+.delivery_step_description {
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 1.2;
 }/*# sourceMappingURL=main.css.map */
