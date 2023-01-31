@@ -62,8 +62,7 @@ input {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgb(157, 177, 162)));
-  background-image: linear-gradient(rgb(157, 177, 162) rgb(100, 121, 100));
+  background-color: rgb(111, 153, 120);
 }
 
 .navigation__wrapper {
@@ -170,34 +169,61 @@ input {
 .hero__section {
   width: 1920px;
   height: 948px;
-  padding-top: 131px;
-  padding-bottom: 135px;
+  padding-top: 87px;
   margin-bottom: 100px;
-  text-align: center;
+  position: relative;
+  border: 1px solid rgb(214, 214, 214);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  background-color: rgb(216, 213, 196);
-  background-image: url("../../../images/hero.jpg");
+  background-color: #FFFFFF;
 }
 
-.title__welcome_to {
+.hero_plate_img {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.hero_food_img {
+  position: absolute;
+  top: 102px;
+  right: 121px;
+}
+
+.hero_title_wrapper {
+  width: 762px;
+  margin-left: 110px;
+}
+
+.hero__title {
+  margin-bottom: 90px;
   display: block;
-  font-family: "Cormorant";
-  font-size: 92px;
-  font-weight: 600;
-  line-height: 1.2;
-  color: rgb(34, 34, 34);
-  margin-bottom: 40px;
 }
 
 .title__main {
   display: block;
   font-family: "Chonburi";
   font-weight: 400;
-  font-size: 142px;
+  font-size: 140px;
   line-height: 1.2;
   color: rgb(51, 51, 51);
+}
+
+.second {
+  font-size: 100px;
+}
+
+.hero_losung {
+  font-family: "Cormorant";
+  font-size: 46px;
+  line-height: 1.2;
+  font-weight: 700;
+  margin-bottom: 130px;
+}
+
+.hero_losung_highlights {
+  color: rgb(219, 153, 1);
 }
 
 .hero__btn-wrapper {
@@ -205,22 +231,22 @@ input {
   display: -ms-flexbox;
   display: flex;
   margin-top: 40px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 
 .hero__btn {
   width: 300px;
   height: 75px;
   text-align: center;
-  background-color: rgb(245, 194, 101);
+  background-color: rgb(252, 185, 63);
   border: 1px solid rgb(153, 153, 153);
+  border-radius: 10px;
   font-size: 20px;
   font-weight: 700;
   line-height: 1.2;
-  margin-left: 20px;
-  margin-right: 20px;
+}
+
+.hero__btn:not(:last-child) {
+  margin-right: 80px;
 }
 
 .our_history {
@@ -279,8 +305,9 @@ input {
   font-weight: 700;
   line-height: 1.2;
   color: rgb(34, 34, 34);
-  background-color: rgb(245, 194, 101);
+  background-color: rgb(252, 185, 63);
   border: 1px solid rgb(153, 153, 153);
+  border-radius: 10px;
 }
 
 .dish__left__img {
@@ -365,8 +392,9 @@ input {
   width: 300px;
   height: 75px;
   text-align: center;
-  background-color: rgb(245, 194, 101);
+  background-color: rgb(252, 185, 63);
   border: 1px solid rgb(153, 153, 153);
+  border-radius: 10px;
   font-size: 20px;
   font-weight: 700;
   line-height: 1.2;
@@ -442,9 +470,9 @@ input {
 .btn_delivery-payment {
   width: 300px;
   height: 75px;
-  border: 1px solid rgb(34, 34, 34);
-  background-color: rgb(245, 194, 101);
-  border-radius: 5px;
+  background-color: rgb(252, 185, 63);
+  border: 1px solid rgb(153, 153, 153);
+  border-radius: 10px;
   font-size: 20px;
   font-weight: 700;
   line-height: 1.2;
@@ -682,4 +710,185 @@ input {
 
 .works_hours:not(:last-child) {
   margin-bottom: 3px;
+}
+
+.contacts_section {
+  margin-bottom: 100px;
+}
+
+.contacts_title {
+  margin-left: 120px;
+  font-family: "Cormorant";
+  font-size: 82px;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 45px;
+}
+
+.contacts_wrapper {
+  padding-left: 120px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.info_wrapper {
+  width: 552px;
+  margin-right: 298px;
+}
+
+.short_info:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+.contacts_subtitle {
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 1.2;
+  margin-bottom: 10px;
+}
+
+.contacts_description {
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 1.2;
+  margin-bottom: 5px;
+}
+
+.footer {
+  height: 355px;
+  background-color: rgb(111, 153, 120);
+}
+
+.footer_wrapper {
+  padding-left: 120px;
+  padding-right: 120px;
+  padding-top: 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.adress_wrapper {
+  width: 395px;
+}
+
+.logo_footer_logo {
+  color: rgb(255, 255, 255);
+  font-family: "Chonburi";
+  font-size: 50px;
+  line-height: 1.2;
+  font-weight: 400;
+  margin-bottom: 30px;
+  display: block;
+}
+
+.logo_footer_media {
+  font-size: 22px;
+  line-height: 1.2;
+  font-weight: 500;
+  color: #FFFFFF;
+  margin-bottom: 20px;
+}
+
+.media_list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 125px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.adress_row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.icon_adress {
+  margin-right: 20px;
+}
+
+.adress_text {
+  font-size: 20px;
+  line-height: 1.2;
+  font-weight: 400;
+  font-style: normal;
+  color: #FFFFFF;
+}
+
+.adress_row:not(:last-child) {
+  margin-bottom: 24px;
+}
+
+.adress_text_last {
+  margin-left: 45px;
+}
+
+.payment_wrapper {
+  width: 300px;
+  margin-bottom: 24px;
+}
+
+.payment_subtitle {
+  font-size: 22px;
+  line-height: 1.2;
+  font-weight: 500;
+  color: #FFFFFF;
+  margin-bottom: 15px;
+}
+
+.app_wraper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.payment_subtitle_service {
+  color: rgb(253, 213, 140);
+  margin-bottom: 15px;
+}
+
+.payment_service_wrapper {
+  width: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.stock_wrapper {
+  width: 332px;
+}
+
+.stock_subtitle {
+  color: rgb(253, 213, 140);
+  font-size: 23px;
+  line-height: 1.2;
+  font-weight: 600;
+}
+
+.stock_subtitle:not(:last-child) {
+  margin-bottom: 18px;
+}
+
+.stock_schedule {
+  font-size: 20px;
+  font-weight: 300;
+  margin-bottom: 25px;
+  color: #FFFFFF;
 }/*# sourceMappingURL=main.css.map */
