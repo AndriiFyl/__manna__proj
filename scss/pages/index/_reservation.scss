@@ -52,15 +52,29 @@
     width: 402px;
 }
 
+.reservation_input_wrapper {
+    height: 65px; 
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.resrev_icon {
+    position: absolute;
+    top: 20px;
+    right: 21px ;
+    cursor: pointer;
+}
+
 .reservation_input {
     width: 402px;
-    margin-bottom: 40px;
     height: 65px;
     padding-left: 13px;
-    padding-right: 35px;
+    padding-right: 45px;
     border-radius: 5px;
     border: 1px solid rgba(132, 157, 138, 1);
     font-size: 20px;
+    cursor: pointer;
+    
 }
 
 .reservation_input::placeholder {

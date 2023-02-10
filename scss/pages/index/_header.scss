@@ -48,6 +48,10 @@
 color: rgba(255, 255, 255, 1);
 }
 
+.nav__link_current {
+    color: rgba(252, 185, 63, 1);
+}
+
 .change__lang {
     background-color:  inherit;
     border: none;
@@ -93,6 +97,7 @@ color: rgba(255, 255, 255, 1);
 }
 
 .icon-shop-basket {
+    margin-bottom: 0px;
     margin-right: 37px;
     cursor: pointer;
 }

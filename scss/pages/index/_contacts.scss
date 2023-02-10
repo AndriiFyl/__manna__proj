@@ -1,5 +1,6 @@
 .contacts_section {
     margin-bottom: 100px;
+   
 }
 
 .contacts_title {
@@ -37,5 +38,15 @@
     font-weight: 400;
     line-height: 1.2;
     margin-bottom: 5px;
+}
+
+.map_wrapper {
+    position: relative;
+}
+
+.contacts_point_of-location_svg {
+    position: absolute;
+    bottom: 97px;
+    left:527px;
 }
 

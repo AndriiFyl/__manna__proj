@@ -1,0 +1,23 @@
+<svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs>
+<symbol id="icon-Arrow-right" viewBox="0 0 32 32">
+<path fill="#999" style="fill: var(--color1, #999)" d="M30.12 17.029c0.568-0.568 0.568-1.489 0-2.057l-9.257-9.257c-0.568-0.568-1.489-0.568-2.057 0s-0.568 1.489 0 2.057l8.228 8.228-8.228 8.228c-0.568 0.568-0.568 1.489 0 2.057s1.489 0.568 2.057 0l9.257-9.257zM0 17.455h29.091v-2.909h-29.091v2.909z"></path>
+</symbol>
+<symbol id="icon-Info" viewBox="0 0 32 32">
+<path fill="none" stroke="#1b1b1b" style="stroke: var(--color2, #1b1b1b)" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="1.2308" d="M31.385 16c0 8.497-6.888 15.385-15.385 15.385s-15.385-6.888-15.385-15.385c0-8.497 6.888-15.385 15.385-15.385s15.385 6.888 15.385 15.385z"></path>
+<path d="M15.745 9.759c0.631 0 1.094-0.476 1.094-1.075 0-0.558-0.484-1.013-1.094-1.013s-1.094 0.476-1.094 1.034c0 0.579 0.484 1.054 1.094 1.054zM14.987 23.012h1.494v-10.875h-1.494v10.875z"></path>
+</symbol>
+<symbol id="icon-shop_basket" viewBox="0 0 31 32">
+<path fill="none" stroke="#fcb93f" style="stroke: var(--color1, #fcb93f)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2.1333" d="M6.72 12.764h-3.52l2.24 13.719h19.467l1.76-13.719h-3.52M6.72 12.764l4.693-8.35M6.72 12.764h16.427M23.147 12.764l-4.693-8.35"></path>
+<path fill="none" stroke="#fcb93f" style="stroke: var(--color1, #fcb93f)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2.1333" d="M9.37 16.813v5.024"></path>
+<path fill="none" stroke="#fcb93f" style="stroke: var(--color1, #fcb93f)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2.1333" d="M15.135 16.813v5.024"></path>
+<path fill="none" stroke="#fcb93f" style="stroke: var(--color1, #fcb93f)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2.1333" d="M20.901 16.813v5.024"></path>
+</symbol>
+<symbol id="icon-Star-113" viewBox="0 0 35 32">
+<path d="M17.28 0l3.88 11.94h12.555l-10.157 7.38 3.88 11.94-10.157-7.379-10.157 7.379 3.88-11.94-10.157-7.38h12.555l3.88-11.94z"></path>
+</symbol>
+<symbol id="icon-Vector_down" viewBox="0 0 32 32">
+<path fill="none" stroke="#999" style="stroke: var(--color1, #999)" stroke-linejoin="miter" stroke-linecap="round" stroke-miterlimit="4" stroke-width="1.6" d="M0.8 9.6l16 11.2 14.4-11.2"></path>
+</symbol>
+</defs>
+</svg>

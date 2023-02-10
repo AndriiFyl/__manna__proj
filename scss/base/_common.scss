@@ -1,6 +1,7 @@
 
 * {
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 
@@ -12,5 +13,26 @@ body {
     background-color: rgba(254, 250, 224, 1);
 }
 
+// navigation--------------------------------------------------
+
+.current_page_wrapper {
+    margin-left: 120px;
+    margin-bottom: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.current_page_home {
+    font-family: 'Cormorant';
+    font-size: 22px;
+    line-height: 1.2;
+    font-weight: 300;
+}
+
+.current_page{
+    font-weight: 700;
+    border-bottom: 1.5px solid black;
+}
+// -------------------------------------------------------------
 
 

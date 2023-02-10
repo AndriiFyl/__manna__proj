@@ -26,10 +26,10 @@
             </li>
             <li  class="navigation__item"><a class="about__us__link nav__link" href="./about.html">About us</a></li>
             <li  class="navigation__item">
-              <a class="contacts__link nav__link" href="./contacts.html">Contacts</a>
+              <a class="contacts__link nav__link" href="#contacts_section">Contacts</a>
             </li>
             <li  class="navigation__item">
-              <a class="dilivery_payment__link nav__link" href="./delivery_payment.html"
+              <a class="dilivery_payment__link nav__link" href="./delivery&payment.html"
                 >Delivery&Payment</a
               >
             </li>
@@ -139,8 +139,8 @@
     <h2 class="menu__title">MENU</h2>
     <div class="menu_dishes__wrapper">
      <button class="btn_slider btn__arrow_left" type="button">
-        <svg class="icon icon-Arrow-left-MENU" width="50px"  height="50px">
-          <use href="./images/sprite-icons.svg#icon-Arrow-left-MENU"></use>
+        <svg class="icon icon-Arrow-left-MENU" width="70px" height="42px">
+          <use href="./images/sprite-icons.svg#icon-left-arrow"></use>
         </svg>
       </button>
       <div class="container__slider">
@@ -187,8 +187,8 @@
                 </div>
                 </div>
                     <button class="btn_slider btn__arrow_right" type="button">
-          <svg class="icon icon-Arrow-right-Menu" width="50px" height="50px">
-            <use href="./images/sprite-icons.svg#icon-Arrow-right-Menu"></use>
+          <svg class="icon icon-Arrow-right-Menu" width="70px" height="42px">
+            <use href="./images/sprite-icons.svg#icon-right-arrow"></use>
           </svg>
       </button>
     </div>
@@ -242,31 +242,31 @@
 
 <div class="delivery_wrapper_right">
   <p class="delivery_number_step step_01">01</p>
-  <div class="icon_wrapper wrapper_order">
-    <svg class="icon icon-order" width="130px" height="100px">
+  <div class="terms_icon_wrapper wrapper_order">
+    <svg class="terms_icon terms_icon-order" width="130px" height="100px">
       <use href="./images/sprite-icons.svg#icon-order-icon-terms-of-del"></use></svg>
       <h3 class="title_delivery_step">Order</h3>
       <p class="delivery_step_description"> Placing your order </br> within 10 minutes
 </p>
   </div>
   <p class="delivery_number_step step_02">02</p>
-  <div  class="icon_wrapper wrapper_payment">
-    <svg class="icon icon-payment" width="130px" height="100px">
+  <div  class="terms_icon_wrapper wrapper_payment">
+    <svg class="terms_icon terms_icon-payment" width="130px" height="100px">
       <use href="./images/sprite-icons.svg#icon-payment-icon-terms-of-del"></use></svg>
       <h3 class="title_delivery_step">Payment</h3>
       <p class="delivery_step_description">Choose the payment </br> method you need
 </p>
   </div>
   <p class="delivery_number_step step_03">03</p>
-  <div  class="icon_wrapper wrapper_packing">
-    <svg class="icon icon-packing" width="130px" height="120px">
+  <div  class="terms_icon_wrapper wrapper_packing">
+    <svg class="terms_icon terms_icon-packing" width="130px" height="120px">
       <use href="./images/sprite-icons.svg#icon-packing-icon-terms-of-del"></use></svg>
       <h3 class="title_delivery_step">Packing</h3>
       <p class="delivery_step_description">We will securely package </br> your order in wrapping film.</p>
   </div>
   <p class="delivery_number_step step_04">04</p>
-  <div  class="icon_wrapper wrapper_delivery">
-    <svg class="icon icon-delivery" width="130px" height="120px">
+  <div  class="terms_icon_wrapper wrapper_delivery">
+    <svg class="terms_icon terms_icon-delivery" width="130px" height="120px">
       <use href="./images/sprite-icons.svg#icon-delivery-icon-terms-of-del"></use></svg>
       <h3 class="title_delivery_step">Delivery</h3>
       <p class="delivery_step_description">Delivery around the city </br> takes up to 40 minutes</p>
@@ -275,7 +275,7 @@
 </div>
 </section>
 
-<!-- RESERVATION ----------------------------------------------------------------------->
+<!-- RESERVATION ---------------------------------------------------------------------------------------------->
 <section class="reservation_section container">
 
   <h2 class="reservation_title">RESERVATION</h2>
@@ -292,14 +292,50 @@
     <div class="inputs_wrapper">
 
     <fieldset class="inputs_group">
+      <div class="reservation_input_wrapper">
 <input class="reservation_input" type="text" name="user_name" placeholder="Your Name"/>
+<svg class="resrev_icon" width="24px" height="24px">
+  <use href="./images/sprite-icons.svg#icon-user-reservation-traced"></use>
+</svg>
+  </div>
+
+     <div class="reservation_input_wrapper">
     <input class="reservation_input" type="text" name="time" placeholder="09:00 pm"/>
+    <svg class="resrev_icon" width="24px" height="24px">
+  <use href="./images/sprite-icons.svg#icon-oclock-reservation-traced"></use>
+</svg>
+    </div>
+
+    <div class="reservation_input_wrapper">
     <input class="reservation_input" type="tel" name="phone_number" placeholder="Phone number"/>
+    <svg class="resrev_icon" width="24px" height="24px">
+  <use href="./images/sprite-icons.svg#icon-phone-reservation-traced"></use>
+</svg>
+    </div>
+
     </fieldset>
     
-    <fieldset class="inputs_group"><input class="reservation_input" type="number" min="0" name="quontity_persons" placeholder="1 person"/>
+    <fieldset class="inputs_group">
+      <div class="reservation_input_wrapper">
+      <input class="reservation_input" type="text" min="0" name="quontity_persons" placeholder="1 person"/>
+      <svg class="resrev_icon" width="24px" height="24px">
+  <use href="./images/sprite-icons.svg#icon-Vector-1-person-reservation"></use>
+</svg>
+      </div>
+
+      <div class="reservation_input_wrapper">
     <input class="reservation_input" type="text" name="full_date" placeholder="mm/dd/yyyy"/>
+    <svg class="resrev_icon" width="24px" height="24px">
+  <use href="./images/sprite-icons.svg#icon-calendar-reservation-traced"></use>
+</svg>
+    </div>
+
+    <div class="reservation_input_wrapper">
     <input class="reservation_input" type="email" name="email" placeholder="e-mail adress"/>
+    <svg class="resrev_icon" width="24px" height="24px">
+  <use href="./images/sprite-icons.svg#icon-email-reservation-traced"></use>
+</svg>
+    </div>
   </fieldset>
    
   </div>
@@ -345,7 +381,9 @@
   </div>
 </section>
 
-<section class="contacts_section container">
+
+<!-- Contacts ------------------------------------------------------------------------------------------------------>
+<section class="contacts_section container" id="contacts_section">
   <h2 class="contacts_title">CONTACTS</h2>
   <div class="contacts_wrapper">
   <div class="info_wrapper">
@@ -376,12 +414,18 @@
     </div>
   </div>
 
+  <div class="map_wrapper">
    <img
                 class="map__img"
                 src="./images/contacts/map.jpg"
                 alt="map"
                 width="830px" 
                 loading="lazy" />
+
+                <svg class="contacts_point_of-location_svg" width="40px" height="45px">
+                  <use href="./images/sprite-icons.svg#icon-icon-location-map-contacts"></use>
+                </svg>
+  </div>
 
   </div>
 </section>

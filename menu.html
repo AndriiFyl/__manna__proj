@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MENU||MANNA</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Chonburi&family=Cormorant:wght@300;400;600;700&family=Montserrat:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./css/main.min.css" />
+  </head>
+
+  <body>
+    <header>
+      
+      <div class="header__container container">
+        <div class="restaurant__logo__wrapper">
+          <a class="restaurant__logo" href="./index.html">MANNA</a>
+        </div>
+        <div class="navigation__wrapper">
+          <ul class="navigation__list">
+            <li class="navigation__item">
+              <a class="menu__link nav__link  nav__link_current" href="./menu.html">Menu</a>
+            </li>
+            <li  class="navigation__item"><a class="about__us__link nav__link" href="./about.html">About us</a></li>
+            <li  class="navigation__item">
+              <a class="contacts__link nav__link" href="./contacts.html">Contacts</a>
+            </li>
+            <li  class="navigation__item">
+              <a class="dilivery_payment__link nav__link" href="./delivery&payment.html"
+                >Delivery&Payment</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <div class="additional__functions__wrapper">
+       <select class="change__lang">
+        <option class="lang" value="en">EN</option>
+        <option  class="lang" value="esp">ESP</option>
+       </select>
+
+<form class="search__form" name="search__form" method="post">
+  
+    <input class="input__field" type="text" name="search__input" placeholder="Search"/>
+            
+            <button class="btn__search" type="submit">
+                <svg class="search-lens__icon" width="20px" height="20px">
+                <use href="./images/sprite-icons.svg#icon-search__lens"></use>
+                  </svg>
+            </button>
+  
+            </form>
+
+            <svg class="icon icon-shop-basket" width="31px" height="30px">
+                <use href="./images/sprite-icons.svg#icon-shop-basket"></use>
+            </svg>
+
+            <button type="button" class="btn__reservation">RESERVATION</button>
+          </div>
+       </div>
+        </div>
+      </div>
+    </header>
+<!-- menu ----------------------------------------------------------------------------->
+    <section class="menu_section container">
+         <div class="current_page_wrapper">
+            <span class="current_page_home"><a href="./index.html">Home</a></span>
+            <svg class="page_navigation_svg_arrow" width="30px" height="15px">
+                <use href="./images/menu_section/menu_sprite.svg#icon-Arrow-right"></use>
+            </svg>
+             <span class="current_page">Menu</span>
+            </div>
+        <div class="menu_wrapper">
+        <div class="menu_aside_positions">
+            <p class="menu_aside_header">Categories</p>
+            <ul class="menu_categories_list">
+                <li class="menu_categories_item"><a class="menu_link_category" href="#">Breakfast</a></li>
+                <li class="menu_categories_item"><a class="menu_link_category" href="#">Lunch</a></li>
+                <li class="menu_categories_item"><a class="menu_link_category" href="#">Vegan Menu</a></li>
+                <li class="menu_categories_item"><a class="menu_link_category" href="#">Kids Menu</a></li>
+                <li class="menu_categories_item"><a class="menu_link_category" href="#">Drinks</a></li>
+                <li class="menu_categories_item"><a class="menu_link_category" href="#">Bar & Launge</a></li>
+                <li class="menu_categories_item"><a class="menu_link_category" href="#">Additions</a></li>
+            </ul>
+            <div class="menu_aside_demarc_line"></div>
+
+            <ul class="menu_categories_sublist">
+                <li class="menu_categories_item"><a class="menu_link_category" href="#">Promotions</a></li>
+                <li class="menu_categories_item"><a class="menu_link_category" href="#"">Happy hours</a></li>
+                <li class="menu_categories_item"><a class="menu_link_category" href="#">New</a></li>
+            </ul>
+            <div class="menu_aside_demarc_line"></div>
+             <p class="menu_aside_header">Additionally</p>
+            <ul class="menu_categories_list">
+                <li class="menu_categories_item"><a class="menu_link_category" href="#">For BIG Company</a></li>
+                <li class="menu_categories_item"><a class="menu_link_category" href="#">For TWO</a></li>
+                <li class="menu_categories_item"><a class="menu_link_category" href="#">For ALL family</a></li>
+                <li class="menu_categories_item"><a class="menu_link_category" href="#">Exclusive from </br> Chef's</a></li>
+            </ul>
+        </div>
+
+
+
+
+        <div class="menu_dishes_wrapper">
+            <label class="menu_sort_by_price">
+                Sort by:
+                 <input class="menu_sort_by_price_input"
+                  type="text" name="menu_sort-price__input" placeholder="price" />
+                  <svg class="menu_input_sort_svg" width="29px" height="20px">
+                    <use href="./images/menu_section/menu_sprite.svg#icon-Vector_down"></use>
+                  </svg>
+            </label>
+
+            <div class="menu_img_container">
+
+              <!-- dish card -------------------->
+              <a href="">
+            <div class="menu_img_card">
+                <div class="menu_inside_wrapper">
+                <p class="menu_inside_text">What is inside</p>
+                <svg  width="26px" height="26px">
+                    <use href="./images/menu_section/menu_sprite.svg#icon-Info"></use>
+                  </svg>
+                </div>
+                <img
+                class="menu_img"
+                src="./images/menu_section/belgian waffle.jpg"
+                alt="plate"
+                width="360px" 
+                height="395px"
+                loading="lazy"
+               />
+               <p class="menu_dish_calories-info">600 g. (735 kcal.)</p>
+               <p class="menu_dish_name">Belgian waffle with blueber..
+</p> 
+<div class="menu_dish-price_wrapper">
+<p class="menu_dish_price">$55</p>
+<div class="menu_starts_wrapper">
+<svg class="menu_dish_rating_svg" width="27px" height="27px" fill="grey">
+  <use href="./images/menu_section/menu_sprite.svg#icon-Star-113"></use>
+</svg>
+<svg class="menu_dish_rating_svg" width="27px" height="27px" fill="grey">
+  <use href="./images/menu_section/menu_sprite.svg#icon-Star-113"></use>
+</svg>
+<svg class="menu_dish_rating_svg" width="27px" height="27px" fill="grey">
+  <use href="./images/menu_section/menu_sprite.svg#icon-Star-113"></use>
+</svg>
+<svg class="menu_dish_rating_svg" width="27px" height="27px" fill="grey">
+  <use href="./images/menu_section/menu_sprite.svg#icon-Star-113"></use>
+</svg>
+<svg class="menu_dish_rating_svg" width="27px" height="27px" fill="grey">
+  <use href="./images/menu_section/menu_sprite.svg#icon-Star-113"></use>
+</svg>
+</div>
+
+
+<svg class="menu_dish_busket_svg" width="34px" height="34px">
+  <use href="./images/menu_section/menu_sprite.svg#icon-shop_basket"></use>
+</svg>
+</div>
+            </div>
+            </a>
+
+
+                         <a href="">
+            <div class="menu_img_card">
+                <div class="menu_inside_wrapper">
+                <p class="menu_inside_text">What is inside</p>
+                <svg  width="26px" height="26px">
+                    <use href="./images/menu_section/menu_sprite.svg#icon-Info"></use>
+                  </svg>
+                </div>
+                <img
+                class="menu_img"
+                src="./images/menu_section/belgian waffle.jpg"
+                alt="plate"
+                width="360px" 
+                height="395px"
+                loading="lazy"
+               />
+               <p class="menu_dish_calories-info">600 g. (735 kcal.)</p>
+               <p class="menu_dish_name">Belgian waffle with blueber..
+</p> 
+<div class="menu_dish-price_wrapper">
+<p class="menu_dish_price">$55</p>
+<div class="menu_starts_wrapper">
+<svg class="menu_dish_rating_svg" width="27px" height="27px" fill="grey">
+  <use href="./images/menu_section/menu_sprite.svg#icon-Star-113"></use>
+</svg>
+<svg class="menu_dish_rating_svg" width="27px" height="27px" fill="grey">
+  <use href="./images/menu_section/menu_sprite.svg#icon-Star-113"></use>
+</svg>
+<svg class="menu_dish_rating_svg" width="27px" height="27px" fill="grey">
+  <use href="./images/menu_section/menu_sprite.svg#icon-Star-113"></use>
+</svg>
+<svg class="menu_dish_rating_svg" width="27px" height="27px" fill="grey">
+  <use href="./images/menu_section/menu_sprite.svg#icon-Star-113"></use>
+</svg>
+<svg class="menu_dish_rating_svg" width="27px" height="27px" fill="grey">
+  <use href="./images/menu_section/menu_sprite.svg#icon-Star-113"></use>
+</svg>
+</div>
+
+
+<svg class="menu_dish_busket_svg" width="34px" height="34px">
+  <use href="./images/menu_section/menu_sprite.svg#icon-shop_basket"></use>
+</svg>
+</div>
+            </div>
+            </a>
+
+
+                         <a href="">
+            <div class="menu_img_card">
+                <div class="menu_inside_wrapper">
+                <p class="menu_inside_text">What is inside</p>
+                <svg  width="26px" height="26px">
+                    <use href="./images/menu_section/menu_sprite.svg#icon-Info"></use>
+                  </svg>
+                </div>
+                <img
+                class="menu_img"
+                src="./images/menu_section/belgian waffle.jpg"
+                alt="plate"
+                width="360px" 
+                height="395px"
+                loading="lazy"
+               />
+               <p class="menu_dish_calories-info">600 g. (735 kcal.)</p>
+               <p class="menu_dish_name">Belgian waffle with blueber..
+</p> 
+<div class="menu_dish-price_wrapper">
+<p class="menu_dish_price">$55</p>
+<div class="menu_starts_wrapper">
+<svg class="menu_dish_rating_svg" width="27px" height="27px" fill="grey">
+  <use href="./images/menu_section/menu_sprite.svg#icon-Star-113"></use>
+</svg>
+<svg class="menu_dish_rating_svg" width="27px" height="27px" fill="grey">
+  <use href="./images/menu_section/menu_sprite.svg#icon-Star-113"></use>
+</svg>
+<svg class="menu_dish_rating_svg" width="27px" height="27px" fill="grey">
+  <use href="./images/menu_section/menu_sprite.svg#icon-Star-113"></use>
+</svg>
+<svg class="menu_dish_rating_svg" width="27px" height="27px" fill="grey">
+  <use href="./images/menu_section/menu_sprite.svg#icon-Star-113"></use>
+</svg>
+<svg class="menu_dish_rating_svg" width="27px" height="27px" fill="grey">
+  <use href="./images/menu_section/menu_sprite.svg#icon-Star-113"></use>
+</svg>
+</div>
+
+
+<svg class="menu_dish_busket_svg" width="34px" height="34px">
+  <use href="./images/menu_section/menu_sprite.svg#icon-shop_basket"></use>
+</svg>
+</div>
+            </div>
+            </a>
+
+
+                         <a href="">
+            <div class="menu_img_card">
+                <div class="menu_inside_wrapper">
+                <p class="menu_inside_text">What is inside</p>
+                <svg  width="26px" height="26px">
+                    <use href="./images/menu_section/menu_sprite.svg#icon-Info"></use>
+                  </svg>
+                </div>
+                <img
+                class="menu_img"
+                src="./images/menu_section/belgian waffle.jpg"
+                alt="plate"
+                width="360px" 
+                height="395px"
+                loading="lazy"
+               />
+               <p class="menu_dish_calories-info">600 g. (735 kcal.)</p>
+               <p class="menu_dish_name">Belgian waffle with blueber..
+</p> 
+<div class="menu_dish-price_wrapper">
+<p class="menu_dish_price">$55</p>
+<div class="menu_starts_wrapper">
+<svg class="menu_dish_rating_svg" width="27px" height="27px" fill="grey">
+  <use href="./images/menu_section/menu_sprite.svg#icon-Star-113"></use>
+</svg>
+<svg class="menu_dish_rating_svg" width="27px" height="27px" fill="grey">
+  <use href="./images/menu_section/menu_sprite.svg#icon-Star-113"></use>
+</svg>
+<svg class="menu_dish_rating_svg" width="27px" height="27px" fill="grey">
+  <use href="./images/menu_section/menu_sprite.svg#icon-Star-113"></use>
+</svg>
+<svg class="menu_dish_rating_svg" width="27px" height="27px" fill="grey">
+  <use href="./images/menu_section/menu_sprite.svg#icon-Star-113"></use>
+</svg>
+<svg class="menu_dish_rating_svg" width="27px" height="27px" fill="grey">
+  <use href="./images/menu_section/menu_sprite.svg#icon-Star-113"></use>
+</svg>
+</div>
+
+
+<svg class="menu_dish_busket_svg" width="34px" height="34px">
+  <use href="./images/menu_section/menu_sprite.svg#icon-shop_basket"></use>
+</svg>
+</div>
+            </div>
+            </a>
+
+            <!-- load more card -->
+            <a href="">
+            <div class="menu_img_card load_more">
+              <p class="menu_card_load_more-text">Load more</p>
+              <svg width="151px" height="40px">
+                <use href="./images/menu_section/menu_sprite.svg#icon-Vector_down"></use>
+              </svg>
+               
+            </div>
+            </a>
+        </div>
+        </div>
+    </section>
+
+    <!-- footer ------------------------------------------------------------------------------------------------------->
+<footer class="footer container">
+  <div class="footer_wrapper">
+
+    <div class="logo">
+      <a class="logo_footer_logo" href="./index.html"> 
+        <p >MANNA</p>
+      </a>
+    
+    <p class="logo_footer_media">Social media</p>
+    <ul class="media_list">
+      <li> 
+        <svg class="social_media" width="24px" height="24px">
+        <use href="./images/sprite-icons.svg#icon-icon-facebook"></use>
+      </svg>
+    </li>
+       <li> 
+        <svg class="social_media" width="24px" height="24px">
+        <use href="./images/sprite-icons.svg#icon-icon-instagram"></use>
+      </svg>
+    </li>
+       <li> 
+        <svg class="social_media" width="24px" height="24px">
+        <use href="./images/sprite-icons.svg#icon-icon-twitter"></use>
+      </svg>
+    </li>
+    </ul>
+    </div>
+<!-- adress-------------------------------------------------------------------------------------- -->
+    <div class="adress_wrapper">
+      <address>
+        <div class="adress_row">
+          <svg class="icon_adress" width="21px" height="24px">
+        <use href="./images/sprite-icons.svg#icon-icon-location"></use>
+      </svg>
+      <span class="adress_text">6101 Annunciation St, New Orleans</span>
+    </div>
+        <div class="adress_row">
+           <svg class="icon_adress" width="23px" height="23px">
+        <use href="./images/sprite-icons.svg#icon-icon-phone"></use>
+      </svg>
+      <span class="adress_text">+1 504 346 - 13 - 13</span>
+    </div>
+
+        <div class="adress_row">
+        
+  <svg class="icon_adress" width="24px" height="24px">
+        <use href="./images/sprite-icons.svg#icon-icon-time"></use>
+  </svg>
+      <span class="adress_text">Mon - Fri 07:00 am - 10:00 pm </span>   
+    </div>
+    <span class="adress_text adress_text_last">Sat - Sun 09:00 am - 10:00 pm </span>
+      </address>
+    </div>
+
+<!-- payment----------------------------------------------------------------------------------------- -->
+    <div class="payment_wrapper">
+      <p class="payment_subtitle">Download our APP</p>
+      <div class="app_wraper">
+  <svg class="app_store" width="136px" height="48px">
+        <use href="./images/sprite-icons.svg#icon-Group-app-store"></use>
+  </svg>
+
+    <svg class="app_google" width="136px" height="48px">
+        <use href="./images/sprite-icons.svg#icon-Group-google-play"></use>
+  </svg>
+      </div>
+
+    <p class="payment_subtitle payment_subtitle_service">Payment services</p>  
+<div class="payment_service_wrapper">
+  <svg class="western_union" width="46px" height="17px">
+        <use href="./images/sprite-icons.svg#icon-icon-western-union"></use>
+  </svg>
+  <svg class="app_store" width="45px" height="16px">
+        <use href="./images/sprite-icons.svg#icon-icon-visa"></use>
+  </svg>
+  <svg class="app_store" width="65px" height="19px">
+        <use href="./images/sprite-icons.svg#icon-icon-paypal"></use>
+  </svg>
+</div>
+    </div>
+
+    <div class="stock_wrapper">
+      <p class="stock_subtitle">Happy Hours</p>
+      <p class="stock_schedule">Wed - Thu 08 : 00 am - 11 : 00 pm </p>
+      <p  class="stock_subtitle">Take away - 10%</p>
+      <p  class="stock_subtitle">Free delivery from $120 order price</p>
+    </div>
+  </div>
+</footer>
+  </body>
+</html>
