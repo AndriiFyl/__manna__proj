@@ -5,15 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>MANNA||RESTAURANT</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Chonburi&family=Cormorant:wght@300;400;600;700&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Chonburi&family=Cormorant:wght@300;400;600;700&family=Montserrat:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
 
- <link rel="stylesheet" href="./css/main.min.css" />
-     
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
-    <header>
+    <!-- <header>
       
       <div class="header__container container">
         <div class="restaurant__logo__wrapper">
@@ -63,113 +65,222 @@
        </div>
         </div>
       </div>
-    </header>
-<!-- Hero ------------------------------------------------------------------------------------------------------------->
-  <section class="hero__section container">
-    <div class="hero_title_wrapper">
+    </header> -->
+
+    <!-- Hero ------------------------------------------------------------------------------------------------------------->
+    <section class="hero__section"> 
+    <!-- mob-tab_wrapper ---------------------------------------->
+    <div class="hero_mob-tab_wrapper">
     <h1 class="hero__title">
-    <span class="title__main">MANNA</span> </br>
-    <span class="title__main second">RESTAURANT</span>
+    MANNA RESTAURANT</h1>
+    
+    
+     <p class="hero_losung"><span class="hero_losung_highlights">When </span> 
+      you eat at a restaurant with people you like, your food will <span class="hero_losung_highlights">taste better</span></p>
+   <div class="hero_dishes-wrapper_mob-tab_imgs">
+    
+      <picture >
+              
+                <source 
+                 media="(max-width: 1439px)" 
+                srcset="./images/hero/plate-dish_1x_mob-tab.png 1x," 
+                type="image/png">
+
+               
+                 <img
+                class="hero_plate_mob-tab_img"
+                src="./images/hero/plate-dish_1x_mob-tab.png"
+                alt="plate"
+                loading="lazy" />
+        </picture>
+      
+        </div>
+        
+     <div class="hero__btn-wrapper">
+    <button class="hero__btn hero__btn-menu">Menu</button>
+    <button class="hero__btn hero__btn-reserve">Reserve a table</button>
+</div>
+  </div> 
+
+    <!-- desktop------------------------------------------------------------- -->
+    <div class="hero_desktop_wrapper">
+<div class="hero_desktop_left-part">
+    <h1 class="hero__title">
+    <span class="title__main">MANNA</span>
+    <span class="title__main title_second">RESTAURANT</span>
     </h1>
     <p class="hero_losung"><span class="hero_losung_highlights">When </span> 
-      you eat at a restaurant with people you like, your food will <span class="hero_losung_highlights">taste better</span></p>
-    <div class="hero__btn-wrapper">
+      you eat at a restaurant with people </br> you like, your food will <span class="hero_losung_highlights">taste better</span></p>
+  <div class="hero__btn-wrapper">
     <button class="hero__btn hero__btn-menu">Menu</button>
     <button class="hero__btn hero__btn-reserve">Reserve a table</button>
 </div>
 </div>
- <img
+
+<div class="hero_desktop_right-part">
+              <img
                 class="hero_plate_img"
-                src="./images/hero/plate.jpg"
+                src="./images/hero/plate-desktop.png"
                 alt="plate"
-                width="990px" 
-                height="940px"
+                width="740px" 
+                height="720px"
                 loading="lazy"
                />
-<div class="hero_dishes_in_plate_wrapper">
+    <div class="hero_dishes_in_plate_wrapper">
                  <img
                 class="hero_food_img"
                 src="./images/hero/food.png"
                 alt="food_on_plate"
-                width="700px" 
-                height="700px"
-                loading="lazy" />
+                width="505px" 
+                height="505px"
+                loading="lazy" /> 
 
-                     <img
+    <!-- <img
                 class="hero_food_img"
                 src="./images/hero/salad.png"
                 alt="food_on_plate"
-                width="700px" 
-                height="700px" 
+               width="545px" 
+                height="555px"
                 loading="lazy" />
 
                      <img
                 class="hero_food_img"
                 src="./images/hero/golubtsii.png"
                 alt="food_on_plate"
-                width="700px" 
-                height="700px"
+               width="545px" 
+                height="555px"
                 loading="lazy" />
 
                      <img
                 class="hero_food_img"
                 src="./images/hero/salad (1).png"
                 alt="food_on_plate"
-                width="700px" 
-                height="700px"
+                width="545px" 
+                height="555px"
                 loading="lazy" />
 
                      <img
                 class="hero_food_img"
                 src="./images/hero/waffle.png"
                 alt="food_on_plate"
-                width="700px" 
-                height="700px"
-                loading="lazy" />
+                width="545px" 
+                height="555px"
+                loading="lazy" /> -->
+    </div>
 </div>
+</div>  
 
   </section>
 
-<!-- History-------------------------------------------------------------------------------------------------------- -->
-  <section class="our_history container">
+    <!-- History-------------------------------------------------------------------------------------------------------- -->
+    <section class="our_history section">
+   <div class="history_mob-tab_wrapper container">
+<h2 class="our_history__title">OUR HISTORY</h2>
+<p class="our_history__text text__first">Joseph and Jonathan Belford established their first restaurant named MANNA in 2022 in New Orleans, Louisiana. From the very first day, the new restaurant in the city was popular. It was different from other restaurants in that area, which the residents and tourists were used to seeing.</p>
+   </div>
+
+    <ul class="history_mob-tab_imgs_list" >
+      <li> 
+        <picture > 
+                <source 
+                 media="(max-width: 767px)" 
+                srcset="./images/our_history/small_food-1x.jpg 1x,
+                 ./images/our_history/small_food-2x.jpg 2x" 
+                type="image/jpg">
+
+             
+                 <source media="(max-width: 1439px)" 
+                srcset=" ./images/our_history/middle_food-1x.jpg 1x,
+                 ./images/our_history/middle_food-2x.jpg  2x" 
+                type="image/jpg">
+
+             
+                 <img
+                class="dish__left__img"
+                src="./images/our_history/small_food-1x.jpg"
+                alt="food"
+                loading="lazy" />
+              
+              </picture></li>
+        
+               <li> 
+                <picture>
+               
+                <source media="(max-width: 767px)" 
+                srcset="./images/our_history/small_interrior-1x.jpg 1x,
+                 ./images/our_history/small_interrior-2x.jpg 2x" 
+                type="image/jpg">
+
+               
+                <source media="(max-width: 1439px)" 
+                srcset="./images/our_history/middle_interrior-1x.jpg 1x,
+                 ./images/our_history/middle_interrior-2x.jpg 2x" 
+                type="image/jpg">
+
+               
+                 <img
+                class="interior__img"
+                src="./images/our_history/small_interrior-1x.jpg"
+                alt="interrior"
+                loading="lazy" />
+              </picture>
+            </li>
+
+              </ul>
+
+   <div class="history_mob-tab_wrapper container">
+ <p class="our_history_losung">“It's essential to have a feelings for either the food or the restaurant where you are eating.”</p>
+<button class="our_history__btn_about_us">About us</button>
+   </div>
+</div>
+
+    <!-- desktop layout ------------------------------------------------------------------------>
+    <div class="container history_desctop_wrapper"> 
   <div class="our_history__left_part">
-    <div class="text_history_wrapper">
       <h2 class="our_history__title">OUR HISTORY</h2>
       <p class="our_history__text text__first">Joseph and Jonathan Belford established their first restaurant named MANNA in 2022 in New Orleans, Louisiana. From the very first day, the new restaurant in the city was popular. It was different from other restaurants in that area, which the residents and tourists were used to seeing.</p></br>
       <p class="our_history__text text__second">The restaurant instantly became the hallmark of Annunciation Street. The quality of the products, the variety of the menu, and the fastest delivery in the city made the restaurant famous throughout New Orleans.</p>
+    
+    <div class="losung__wrapper">
+      <p class="our_history_losung">“It's essential to have a feelings for either the food or the restaurant where you are eating.”</p>
     </div>
          <img
                 class="dish__left__img"
                 src="./images/our_history/dish_left.jpg"
                 alt="dish"
-                width="242px" 
+                width="182px" 
+                height="295px"
                 loading="lazy" />
-      <div class="losung__wrapper">
-      <p class="our_history_losung">“It's essential to have a feelings for either the food or the restaurant where you are eating.”</p>
+      
       <button class="our_history__btn_about_us">About us</button>
-      </div>
+      
       </div>
 
-      <div class="our_history__right part_part">
+     <div class="history_right_imgs_wrapper">
          <img
                 class="interior__img"
                 src="./images/our_history/interior.jpg"
                 alt="interior"
-                width="688px" 
+                width="450px"
+                height="870px" 
                 loading="lazy" />
 
                  <img
                 class="dish__right__img"
                 src="./images/our_history/dish_right.jpg"
                 alt="dish"
-                width="535px" 
+                width="380px"
+                height="377px" 
                 loading="lazy" />
+                </div>
 
+      
       </div>
   </section>
 
-  <!-- Menu------------------------------------------------------------------------------------------------------ -->
-  <section class="menu__section container">
+    <!-- Menu------------------------------------------------------------------------------------------------------ -->
+    <!-- <section class="menu__section section">
+    <div class="menu_container container">
     <h2 class="menu__title">MENU</h2>
     <div class="menu_dishes__wrapper">
      <button class="btn_slider btn__arrow_left" type="button">
@@ -180,44 +291,53 @@
       <div class="container__slider">
      <div class="slider">
       <div class="menu__slider-line">
-       <img
+          <picture>
+              
+                <source media="(max-width: 767px)" 
+                srcset="./images/menu/Small_Menu_Breakfast_1x.jpg 1x,
+                 ./images/menu/Small_Menu_Breakfast_2x.jpg 2x" 
+                type="image/jpg">
+
+             
+                <source media="(max-width: 1439px)" 
+                srcset="./images/our_history/middle_interrior-1x.jpg 1x,
+                 ./images/our_history/middle_interrior-2x.jpg 2x" 
+                type="image/jpg">
+
+             
+                 <img
+                class="menu_img breakfast__img"
+                src="./images/menu/Small_Menu_Breakfast_1x.jpg"
+                alt="breakfast"
+                loading="lazy" />
+              </picture> -->
+    <!-- <img
                 class="menu__img"
                 src="./images/menu/Menu Breakfast_blur.jpg"
                 alt="dish"
-                width="400px" 
+                width="330px"
+                height="490px" 
                 loading="lazy" />
                       <img
                 class="menu__img"
                 src="./images/menu/Menu_Lunch_blur.jpg"
                 alt="dish"
-                width="400px" 
+               width="330px"  
                 loading="lazy" />
                       <img
                 class="menu__img"
                 src="./images/menu/Menu_Dinner_blur.jpg"
                 alt="dish"
-                width="400px" 
+                width="330px" 
                 loading="lazy" />
                  <img
                 class="menu__img"
                 src="./images/menu/Menu Breakfast_blur.jpg"
                 alt="dish"
-                width="400px" 
-                loading="lazy" />
-                      <img
-                class="menu__img"
-                src="./images/menu/Menu_Lunch_blur.jpg"
-                alt="dish"
-                width="400px" 
-                loading="lazy" />
-                      <img
-                class="menu__img"
-                src="./images/menu/Menu_Dinner_blur.jpg"
-                alt="dish"
-                width="400px" 
-                loading="lazy" />
-                
-              </div>
+                width="330px" 
+                loading="lazy" /> -->
+
+    <!-- </div>
                 </div>
                 </div>
                     <button class="btn_slider btn__arrow_right" type="button">
@@ -235,31 +355,36 @@
                 class="special_dish__img"
                 src="./images/menu/good_to_try.jpg"
                 alt="dish"
-                width="383px" 
+                width="300px" 
+            
                 loading="lazy" />
                  <img
                 class="special_dish__img"
                 src="./images/menu/love_special.jpg"
                 alt="dish"
-                width="383px" 
+               width="300px" 
+             
                 loading="lazy" />
                 <img
                 class="special_dish__img"
                 src="./images/menu/amazing.jpg"
                 alt="dish"
-                width="383px" 
+               width="300px" 
+            
                 loading="lazy" />
                 <img
                 class="special_dish__img"
                 src="./images/menu/just_perfect.jpg"
                 alt="dish"
-                width="383px" 
+                width="300px" 
+                
                 loading="lazy" />
      </div>
-  </section>
+     </div>
+  </section> -->
 
-  <!-- Terms of delivery --------------------------------------------------------------------------------------->
-<section class="terms_of_delivery__section container">
+    <!-- Terms of delivery --------------------------------------------------------------------------------------->
+    <!-- <section class="terms_of_delivery__section container">
   <h2 class="terms_title">TERMS OF DELIVERY</h2>
 <div class="terms_description">
 
@@ -277,7 +402,7 @@
 <div class="delivery_wrapper_right">
   <p class="delivery_number_step step_01">01</p>
   <div class="terms_icon_wrapper wrapper_order">
-    <svg class="terms_icon terms_icon-order" width="130px" height="100px">
+    <svg class="terms_icon terms_icon-order" width="100px" height="75px">
       <use href="./images/sprite-icons.svg#icon-order-icon-terms-of-del"></use></svg>
       <h3 class="title_delivery_step">Order</h3>
       <p class="delivery_step_description"> Placing your order </br> within 10 minutes
@@ -285,7 +410,7 @@
   </div>
   <p class="delivery_number_step step_02">02</p>
   <div  class="terms_icon_wrapper wrapper_payment">
-    <svg class="terms_icon terms_icon-payment" width="130px" height="100px">
+    <svg class="terms_icon terms_icon-payment" width="100px" height="75px">
       <use href="./images/sprite-icons.svg#icon-payment-icon-terms-of-del"></use></svg>
       <h3 class="title_delivery_step">Payment</h3>
       <p class="delivery_step_description">Choose the payment </br> method you need
@@ -293,24 +418,24 @@
   </div>
   <p class="delivery_number_step step_03">03</p>
   <div  class="terms_icon_wrapper wrapper_packing">
-    <svg class="terms_icon terms_icon-packing" width="130px" height="120px">
+    <svg class="terms_icon terms_icon-packing" width="100px" height="90px">
       <use href="./images/sprite-icons.svg#icon-packing-icon-terms-of-del"></use></svg>
       <h3 class="title_delivery_step">Packing</h3>
       <p class="delivery_step_description">We will securely package </br> your order in wrapping film.</p>
   </div>
   <p class="delivery_number_step step_04">04</p>
   <div  class="terms_icon_wrapper wrapper_delivery">
-    <svg class="terms_icon terms_icon-delivery" width="130px" height="120px">
+    <svg class="terms_icon terms_icon-delivery" width="100px" height="90px">
       <use href="./images/sprite-icons.svg#icon-delivery-icon-terms-of-del"></use></svg>
       <h3 class="title_delivery_step">Delivery</h3>
       <p class="delivery_step_description">Delivery around the city </br> takes up to 40 minutes</p>
   </div>
 </div>
 </div>
-</section>
+</section> -->
 
-<!-- RESERVATION ---------------------------------------------------------------------------------------------->
-<section class="reservation_section container">
+    <!-- RESERVATION ---------------------------------------------------------------------------------------------->
+    <!-- <section class="reservation_section container">
 
   <h2 class="reservation_title">RESERVATION</h2>
   <div class="reservation_wrapper">
@@ -320,11 +445,11 @@
                 class="fork_img"
                 src="./images/reservation/IMG fork reservatiom form.png"
                 alt="fork"
-                width="383px" 
+                width="310px" 
                 loading="lazy" />
   <form class="reserve_form">
-    <div class="inputs_wrapper">
 
+    <div class="inputs_wrapper">
     <fieldset class="inputs_group">
       <div class="reservation_input_wrapper">
 <input class="reservation_input" type="text" name="user_name" placeholder="Your Name"/>
@@ -413,18 +538,17 @@
 
   </div>
   </div>
-</section>
+</section> -->
 
-
-<!-- Contacts ------------------------------------------------------------------------------------------------------>
-<section class="contacts_section container" id="contacts_section">
+    <!-- Contacts ------------------------------------------------------------------------------------------------------>
+    <!-- <section class="contacts_section container" id="contacts_section">
   <h2 class="contacts_title">CONTACTS</h2>
   <div class="contacts_wrapper">
   <div class="info_wrapper">
 
     <div class="short_info">
       <p class="contacts_subtitle">ADRESS</p>
-      <p class="contacts_description">6101 Annunciation St, New Orleans, Louisiana, USA</p>
+      <p class="contacts_description">6101 Annunciation St, New Orleans,</br> Louisiana, USA</p>
     </div>
 
     <div class="short_info">
@@ -453,40 +577,23 @@
                 class="map__img"
                 src="./images/contacts/map.jpg"
                 alt="map"
-                width="830px" 
+                width="830px"
+                height="518px" 
                 loading="lazy" />
 
                 <svg class="contacts_point_of-location_svg" width="40px" height="45px">
                   <use href="./images/sprite-icons.svg#icon-icon-location-map-contacts"></use>
                 </svg>
   </div>
-
   </div>
+</section> -->
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-</section>
-
-<!-- footer ------------------------------------------------------------------------------------------------------->
-<footer class="footer container">
+    <!-- footer ------------------------------------------------------------------------------------------------------->
+    <!-- <footer class="footer container">
   <div class="footer_wrapper">
 
     <div class="logo">
+      
       <a class="logo_footer_logo" href="./index.html"> 
         <p >MANNA</p>
       </a>
@@ -509,9 +616,10 @@
       </svg>
     </li>
     </ul>
-    </div>
-<!-- adress-------------------------------------------------------------------------------------- -->
-    <div class="adress_wrapper">
+    </div> -->
+
+    <!-- adress-------------------------------------------------------------------------------------- -->
+    <!-- <div class="adress_wrapper">
       <address>
         <div class="adress_row">
           <svg class="icon_adress" width="21px" height="24px">
@@ -535,10 +643,10 @@
     </div>
     <span class="adress_text adress_text_last">Sat - Sun 09:00 am - 10:00 pm </span>
       </address>
-    </div>
+    </div> -->
 
-<!-- payment----------------------------------------------------------------------------------------- -->
-    <div class="payment_wrapper">
+    <!-- payment----------------------------------------------------------------------------------------- -->
+    <!-- <div class="payment_wrapper">
       <p class="payment_subtitle">Download our APP</p>
       <div class="app_wraper">
   <svg class="app_store" width="136px" height="48px">
@@ -574,8 +682,8 @@
   </div>
 
 
-</footer>
+</footer> -->
 
-<script src="./js/slider_menu.js"></script>
-    </body>
+    <script src="./js/slider_menu.js"></script>
+  </body>
 </html>

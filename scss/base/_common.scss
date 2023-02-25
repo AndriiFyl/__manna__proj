@@ -10,13 +10,23 @@
 body {
     margin: 0;
     font-family:'Montserrat',  sans-serif;
-    background-color: rgba(254, 250, 224, 1);
+    background-color: #F5F5F5;
+}
+
+.section {
+padding-bottom: 60px;
+margin-left: auto;
+margin-right: auto;
+
+@media screen and (min-width: 1440px) {
+    padding-bottom: 100px;
+    }
 }
 
 // navigation--------------------------------------------------
 
 .current_page_wrapper {
-    margin-left: 120px;
+    margin-left: 75px;
     margin-bottom: 50px;
     display: flex;
     align-items: center;

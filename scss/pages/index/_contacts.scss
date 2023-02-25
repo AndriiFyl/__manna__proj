@@ -4,24 +4,22 @@
 }
 
 .contacts_title {
-    margin-left: 120px;
+    margin-left: 75px;
     font-family: 'Cormorant';
-    font-size: 82px;
+    font-size: 72px;
     font-weight: 700;
     line-height: 1.2;
-    margin-bottom: 45px;
+    margin-bottom: 35px;
 }
 
 .contacts_wrapper {
-    padding-left: 120px;
+    padding-left: 75px;
     display: flex;
+    justify-content: space-between;
+    width: 1440px;
     
 }
 
-.info_wrapper {
-    width: 552px;
-    margin-right: 298px;
-}
 
 .short_info:not(:last-child) {
     margin-bottom: 30px;
@@ -41,13 +39,15 @@
 }
 
 .map_wrapper {
+    width: 830px;
+    height: 518px;
     position: relative;
 }
 
 .contacts_point_of-location_svg {
     position: absolute;
-    bottom: 97px;
-    left:527px;
+    bottom: 90px;
+    left:530px;
 }
 
 

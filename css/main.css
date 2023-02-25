@@ -1,7 +1,27 @@
 .container {
-  width: 1920px;
   margin-left: auto;
   margin-right: auto;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+    padding-left: 35px;
+    padding-right: 35px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .container {
+    width: 1440px;
+    padding-left: 75px;
+    padding-right: 75px;
+  }
 }
 
 * {
@@ -13,11 +33,22 @@
 body {
   margin: 0;
   font-family: "Montserrat", sans-serif;
-  background-color: rgb(254, 250, 224);
+  background-color: #F5F5F5;
+}
+
+.section {
+  padding-bottom: 60px;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media screen and (min-width: 1440px) {
+  .section {
+    padding-bottom: 100px;
+  }
 }
 
 .current_page_wrapper {
-  margin-left: 120px;
+  margin-left: 75px;
   margin-bottom: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -81,8 +112,8 @@ input {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding-left: 120px;
-  padding-right: 120px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -105,7 +136,6 @@ input {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-left: 140px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -117,7 +147,6 @@ input {
   font-weight: 400;
   line-height: 1.2;
   color: rgb(255, 255, 255);
-  margin-right: 85px;
 }
 
 .navigation__item {
@@ -127,7 +156,7 @@ input {
 }
 
 .navigation__item:not(:last-child) {
-  margin-right: 90px;
+  margin-right: 30px;
 }
 
 .nav__link {
@@ -196,59 +225,128 @@ input {
 }
 
 .hero__section {
-  width: 1920px;
-  height: 948px;
-  padding-top: 87px;
-  margin-bottom: 100px;
-  position: relative;
-  border: 1px solid rgb(214, 214, 214);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+  max-width: 480px;
+  min-height: 805px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 30px;
+  padding-bottom: 30px;
   background-color: #FFFFFF;
+  border: 1px solid rgb(214, 214, 214);
+}
+@media screen and (min-width: 768px) {
+  .hero__section {
+    max-width: 768px;
+    min-height: 816px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .hero__section {
+    max-width: 1440px;
+    min-height: 300px;
+    padding: 0;
+  }
+}
+.hero__section .hero_mob-tab_wrapper {
+  text-align: center;
+}
+@media screen and (min-width: 1440px) {
+  .hero__section .hero_mob-tab_wrapper {
+    display: none;
+  }
+}
+.hero__section .hero_plate_mob-tab_img {
+  margin-left: auto;
+  margin-right: auto;
+}
+.hero__section .hero_desktop_wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+@media screen and (max-width: 1439.98px) {
+  .hero__section .hero_desktop_wrapper {
+    display: none;
+  }
+}
+.hero__section .hero_desktop_left-part {
+  padding-top: 95px;
+  padding-bottom: 95px;
+  width: 44%;
+  padding-left: 75px;
 }
 
-.hero_plate_img {
-  position: absolute;
-  top: 0;
-  right: 0;
+.hero_desktop_right-part {
+  position: relative;
 }
 
-.hero_food_img {
-  position: absolute;
-  top: 120px;
-  right: 148px;
-}
-
-.hero_title_wrapper {
-  width: 762px;
-  margin-left: 110px;
+@media screen and (min-width: 480px) {
+  .hero_title_wrapper {
+    display: none;
+  }
 }
 
 .hero__title {
-  margin-bottom: 90px;
-  display: block;
+  font-family: "Chonburi";
+  font-weight: 400;
+  line-height: 1.2;
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+@media screen and (min-width: 768px) {
+  .hero__title {
+    font-size: 43px;
+    margin-bottom: 25px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .hero__title {
+    margin-bottom: 70px;
+  }
 }
 
 .title__main {
-  display: block;
-  font-family: "Chonburi";
-  font-weight: 400;
-  font-size: 140px;
-  line-height: 1.2;
+  font-size: 110px;
   color: rgb(51, 51, 51);
+  margin-bottom: 20px;
+  display: block;
 }
 
-.second {
-  font-size: 100px;
+.title_second {
+  font-size: 70px;
 }
 
 .hero_losung {
   font-family: "Cormorant";
-  font-size: 46px;
   line-height: 1.2;
-  font-weight: 700;
-  margin-bottom: 130px;
+  margin-bottom: 30px;
+  font-size: 24px;
+  width: 322px;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media screen and (min-width: 768px) {
+  .hero_losung {
+    font-size: 30px;
+    width: 638px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .hero_losung {
+    font-size: 30px;
+    margin-left: 0;
+    margin-bottom: 100px;
+    width: 500px;
+  }
+}
+
+.hero_dishes-wrapper_mob-tab_imgs {
+  margin-bottom: 43px;
 }
 
 .hero_losung_highlights {
@@ -259,251 +357,135 @@ input {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-top: 40px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+@media screen and (min-width: 1440px) {
+  .hero__btn-wrapper {
+    width: 530px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
 }
 
 .hero__btn {
-  width: 300px;
-  height: 75px;
+  width: 210px;
+  height: 60px;
   text-align: center;
   background-color: rgb(252, 185, 63);
   border: 1px solid rgb(153, 153, 153);
   border-radius: 10px;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 700;
   line-height: 1.2;
 }
-
-.hero__btn:not(:last-child) {
-  margin-right: 80px;
+@media screen and (min-width: 768px) {
+  .hero__btn {
+    width: 280px;
+  }
 }
-
-@-webkit-keyframes dishesImgAnimation {
-  0% {
-    opacity: 0;
-  }
-  12% {
-    opacity: 1;
-  }
-  35% {
-    opacity: 1;
-  }
-  45% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 0;
+@media screen and (min-width: 1440px) {
+  .hero__btn {
+    width: 250px;
   }
 }
 
-@keyframes dishesImgAnimation {
-  0% {
-    opacity: 0;
-  }
-  12% {
-    opacity: 1;
-  }
-  35% {
-    opacity: 1;
-  }
-  45% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-.hero_dishes_in_plate_wrapper img {
-  opacity: 0;
-  -webkit-animation-name: dishesImgAnimation;
-          animation-name: dishesImgAnimation;
-  -webkit-animation-duration: 17s;
-          animation-duration: 17s;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-}
+@-webkit-keyframes dishesImgAnimation {}
 
-.hero_dishes_in_plate_wrapper img:nth-child(1) {
-  -webkit-animation-delay: 0s;
-          animation-delay: 0s;
-}
-
-.hero_dishes_in_plate_wrapper img:nth-child(2) {
-  -webkit-animation-delay: 3s;
-          animation-delay: 3s;
-}
-
-.hero_dishes_in_plate_wrapper img:nth-child(3) {
-  -webkit-animation-delay: 6s;
-          animation-delay: 6s;
-}
-
-.hero_dishes_in_plate_wrapper img:nth-child(4) {
-  -webkit-animation-delay: 9s;
-          animation-delay: 9s;
-}
-
-.hero_dishes_in_plate_wrapper img:nth-child(5) {
-  -webkit-animation-delay: 12s;
-          animation-delay: 12s;
+@keyframes dishesImgAnimation {}
+.hero_dishes_in_plate_wrapper {
+  position: absolute;
+  top: 100px;
+  left: 115px;
 }
 
 .our_history {
-  height: 950px;
-  position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-bottom: 100px;
+  background-color: #FFFFFF;
+  max-width: 480px;
+  padding-top: 60px;
+}
+@media screen and (min-width: 768px) {
+  .our_history {
+    max-width: 768px;
+  }
 }
 
-.text_history_wrapper {
-  width: 850px;
-  margin-left: 120px;
+.history_mob-tab_wrapper {
+  text-align: center;
+}
+@media screen and (min-width: 1440px) {
+  .history_mob-tab_wrapper {
+    display: none;
+  }
 }
 
 .our_history__title {
   font-family: "Cormorant";
-  font-size: 82px;
   font-weight: 700;
   line-height: 1.2;
-  margin-bottom: 45px;
+  margin-bottom: 25px;
+}
+@media screen and (min-width: 480px) {
+  .our_history__title {
+    font-size: 40px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .our_history__title {
+    font-size: 47px;
+  }
+}
+@media screen and (max-width: 1439.98px) {
+  .our_history__title {
+    text-align: center;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .our_history__title {
+    font-size: 72px;
+    margin-bottom: 45px;
+  }
 }
 
 .our_history__text {
-  font-size: 22px;
+  display: block;
+  font-size: 14px;
   font-weight: 300;
   line-height: 1.2;
-  margin-bottom: 30px;
+  margin-bottom: 15px;
+}
+@media screen and (min-width: 768px) {
+  .our_history__text {
+    font-size: 19px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .our_history__text {
+    font-size: 20px;
+  }
 }
 
-.text__second {
-  margin-bottom: 100px;
-}
-
-.losung__wrapper {
-  width: 438px;
-  text-align: center;
-  margin-left: 316px;
-}
-
-.our_history_losung {
-  font-family: "Cormorant";
-  font-size: 42px;
-  font-weight: 600;
-  line-height: 1.2;
-  color: rgb(34, 34, 34);
-  text-align: center;
-  margin-bottom: 150px;
-}
-
-.our_history__btn_about_us {
-  width: 300px;
-  height: 75px;
-  font-size: 20px;
-  font-weight: 700;
-  line-height: 1.2;
-  color: rgb(34, 34, 34);
-  background-color: rgb(252, 185, 63);
-  border: 1px solid rgb(153, 153, 153);
-  border-radius: 10px;
-}
-
-.dish__left__img {
-  position: absolute;
-  top: 434px;
-}
-
-.interior__img {
-  position: absolute;
-  top: 0;
-  right: 0;
-}
-
-.dish__right__img {
-  position: absolute;
-  bottom: 0;
-  right: 437px;
-}
-
-.menu__section {
-  margin-bottom: 100px;
-}
-
-.menu__title {
-  padding-left: 120px;
-}
-
-.menu_dishes__wrapper {
-  min-width: 1440px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 90px;
+.history_mob-tab_imgs_list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  position: relative;
-}
-
-.container__slider {
-  min-width: 1440px;
-  margin-left: 190px;
-  overflow: hidden;
-}
-
-.slider {
-  width: 400px;
-  height: 490px;
-}
-
-.menu__slider-line {
-  height: 490px;
-  width: 1440px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  position: relative;
-  gap: 118px;
-  left: 0;
-  -webkit-transition: all ease 500ms;
-  transition: all ease 500ms;
-}
-
-.btn__arrow_right {
-  position: absolute;
-  top: 50%;
-  right: 0;
-}
-
-.menu__title {
-  font-family: "Cormorant";
-  font-size: 82px;
-  font-weight: 700;
-  line-height: 1.2;
-  color: rgb(34, 34, 34);
-  margin-bottom: 45px;
-}
-
-.menu__btn_menu {
-  width: 300px;
-  height: 75px;
-  text-align: center;
-  background-color: rgb(252, 185, 63);
-  border: 1px solid rgb(153, 153, 153);
-  border-radius: 10px;
-  font-size: 20px;
-  font-weight: 700;
-  line-height: 1.2;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  min-width: 320px;
+  max-width: 480px;
+  margin-bottom: 33px;
   margin-left: auto;
   margin-right: auto;
-  display: block;
-  margin-bottom: 100px;
+}
+@media screen and (min-width: 768px) {
+  .history_mob-tab_imgs_list {
+    max-width: 768px;
+  }
 }
 
-.special-dishes__wrapper {
+.history_desctop_wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -511,14 +493,134 @@ input {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
+@media screen and (max-width: 1439.98px) {
+  .history_desctop_wrapper {
+    display: none;
+  }
+}
+
+.our_history__left_part {
+  width: 640px;
+  position: relative;
+}
+
+.text__second {
+  margin-bottom: 100px;
+}
+
+.losung__wrapper {
+  width: 388px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.our_history_losung {
+  font-family: "Cormorant";
+  font-size: 26px;
+  font-weight: 600;
+  line-height: 1.2;
+  color: rgb(34, 34, 34);
+  text-align: center;
+  margin-bottom: 45px;
+}
+@media screen and (min-width: 768px) {
+  .our_history_losung {
+    font-size: 32px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .our_history_losung {
+    font-size: 36px;
+    margin-bottom: 100px;
+  }
+}
+
+.our_history__btn_about_us {
+  width: 250px;
+  height: 60px;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.2;
+  color: rgb(34, 34, 34);
+  background-color: rgb(252, 185, 63);
+  border: 1px solid rgb(153, 153, 153);
+  border-radius: 10px;
+}
+@media screen and (min-width: 1440px) {
+  .our_history__btn_about_us {
+    height: 75px;
+    margin-left: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.dish__left__img {
+  border-bottom-right-radius: 10px;
+  border-top-right-radius: 10px;
+}
+@media screen and (min-width: 1440px) {
+  .dish__left__img {
+    position: absolute;
+    top: 434px;
+    left: -75px;
+  }
+}
+
+.interior__img {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.history_right_imgs_wrapper {
+  position: relative;
+}
+
+.dish__right__img {
+  position: absolute;
+  bottom: 0;
+  right: 330px;
+  border-bottom-left-radius: 10px;
+  border-top-left-radius: 10px;
+}
+
+.menu_container {
+  text-align: center;
+}
+
+.menu__title {
+  font-family: "Cormorant";
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 1.2;
+  color: rgb(34, 34, 34);
+  margin-bottom: 40px;
+}
+@media screen and (min-width: 768px) {
+  .menu__title {
+    font-size: 47px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .menu__title {
+    font-size: 60px;
+  }
+}
 
 .btn_slider {
   background-color: transparent;
 }
+@media screen and (max-width: 1439.98px) {
+  .btn_slider {
+    display: none;
+  }
+}
 
 .terms_of_delivery__section {
-  padding-left: 120px;
-  padding-right: 120px;
+  padding-left: 75px;
+  padding-right: 75px;
   margin-bottom: 100px;
 }
 
@@ -526,24 +628,24 @@ input {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 1680px;
+  width: 1290px;
   position: relative;
 }
 
 .terms_title {
   font-family: "Cormorant";
   font-weight: 700;
-  font-size: 82px;
+  font-size: 62px;
   line-height: 1.2;
-  margin-bottom: 45px;
+  margin-bottom: 35px;
 }
 
 .delivery_wrapper_left {
-  width: 688px;
+  width: 530px;
 }
 
 .text_description {
-  font-size: 22px;
+  font-size: 20px;
   font-weight: 300;
   line-height: 1.2;
 }
@@ -558,16 +660,16 @@ input {
 
 .terms_losung {
   display: block;
-  width: 546px;
+  width: 480px;
   font-family: "Cormorant";
-  font-size: 42px;
+  font-size: 34px;
   font-weight: 600;
   line-height: 1.2;
-  margin-bottom: 90px;
+  margin-bottom: 70px;
 }
 
 .btn_delivery-payment {
-  width: 300px;
+  width: 250px;
   height: 75px;
   background-color: rgb(252, 185, 63);
   border: 1px solid rgb(153, 153, 153);
@@ -581,16 +683,17 @@ input {
 }
 
 .terms_icon_wrapper {
-  width: 350px;
-  height: 290px;
-  background-color: rgb(240, 240, 240);
-  border: 1px solid grey;
+  width: 270px;
+  height: 250px;
+  border: 1px solid rgb(214, 214, 214);
+  background-color: white;
   text-align: center;
+  border-radius: 5px;
 }
 
 .wrapper_order {
   position: absolute;
-  right: 547px;
+  right: 427px;
   top: 0;
 }
 
@@ -602,14 +705,14 @@ input {
 
 .wrapper_packing {
   position: absolute;
-  right: 742px;
+  right: 542px;
   top: 390px;
 }
 
 .wrapper_delivery {
   position: absolute;
   top: 390px;
-  right: 192px;
+  right: 152px;
 }
 
 .delivery_number_step {
@@ -621,30 +724,30 @@ input {
 
 .step_01 {
   position: absolute;
-  right: 500px;
-  top: -55px;
+  right: 380px;
+  top: -50px;
 }
 
 .step_02 {
   position: absolute;
-  right: 349px;
-  top: 190px;
+  right: 270px;
+  top: 150px;
 }
 
 .step_03 {
   position: absolute;
-  right: 693px;
+  right: 500px;
   top: 312px;
 }
 
 .step_04 {
   position: absolute;
-  right: 126px;
+  right: 85px;
   top: 485px;
 }
 
 .terms_icon {
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 
 .terms_icon-order, .terms_icon-payment {
@@ -656,8 +759,8 @@ input {
 }
 
 .title_delivery_step {
-  margin-bottom: 15px;
-  font-size: 30px;
+  margin-bottom: 10px;
+  font-size: 25px;
   font-weight: 500;
   line-height: 1.2;
 }
@@ -669,12 +772,11 @@ input {
 }
 
 .reservation_section {
-  margin-bottom: 100px;
+  margin-bottom: 80px;
 }
 
 .reservation_wrapper {
-  padding-left: 120px;
-  padding-right: 170px;
+  padding-left: 75px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -686,34 +788,29 @@ input {
 
 .reservation_title {
   font-family: "Cormorant";
-  font-size: 82px;
+  font-size: 72px;
   font-weight: 700;
   line-height: 1.2;
-  margin-bottom: 45px;
-  margin-left: 120px;
+  margin-bottom: 35px;
+  margin-left: 75px;
 }
 
 .fork_img {
   position: absolute;
-  top: -170px;
-  left: 960px;
+  top: -130px;
+  left: 720px;
 }
 
 .reserve_form {
-  width: 1008px;
+  width: 780px;
   height: 500px;
   border: 2px solid rgb(90, 110, 90);
   border-radius: 10px;
-  padding-left: 70px;
-  padding-right: 70px;
+  padding-left: 60px;
+  padding-right: 60px;
   padding-top: 50px;
   position: absolute;
   background-color: rgb(254, 250, 224);
-}
-
-.empty_block {
-  width: 1008px;
-  height: 500px;
 }
 
 .inputs_wrapper {
@@ -724,7 +821,7 @@ input {
 
 .inputs_group {
   border: none;
-  width: 402px;
+  width: 302px;
 }
 
 .reservation_input_wrapper {
@@ -741,7 +838,7 @@ input {
 }
 
 .reservation_input {
-  width: 402px;
+  width: 302px;
   height: 65px;
   padding-left: 13px;
   padding-right: 45px;
@@ -782,7 +879,7 @@ input {
 }
 
 .btn_submit_form_reservation {
-  width: 300px;
+  width: 250px;
   height: 75px;
   background-color: rgb(252, 185, 63);
   border: 1px solid rgb(153, 153, 153);
@@ -829,24 +926,23 @@ input {
 }
 
 .contacts_title {
-  margin-left: 120px;
+  margin-left: 75px;
   font-family: "Cormorant";
-  font-size: 82px;
+  font-size: 72px;
   font-weight: 700;
   line-height: 1.2;
-  margin-bottom: 45px;
+  margin-bottom: 35px;
 }
 
 .contacts_wrapper {
-  padding-left: 120px;
+  padding-left: 75px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-}
-
-.info_wrapper {
-  width: 552px;
-  margin-right: 298px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 1440px;
 }
 
 .short_info:not(:last-child) {
@@ -868,13 +964,15 @@ input {
 }
 
 .map_wrapper {
+  width: 830px;
+  height: 518px;
   position: relative;
 }
 
 .contacts_point_of-location_svg {
   position: absolute;
-  bottom: 97px;
-  left: 527px;
+  bottom: 90px;
+  left: 530px;
 }
 
 .footer {
@@ -883,8 +981,8 @@ input {
 }
 
 .footer_wrapper {
-  padding-left: 120px;
-  padding-right: 120px;
+  padding-left: 50px;
+  padding-right: 50px;
   padding-top: 70px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -895,14 +993,14 @@ input {
 }
 
 .adress_wrapper {
-  width: 395px;
+  width: 390px;
 }
 
 .logo_footer_logo {
   color: rgb(255, 255, 255);
   font-family: "Chonburi";
-  font-size: 50px;
-  line-height: 1.2;
+  font-size: 40px;
+  line-height: 0.8;
   font-weight: 400;
   margin-bottom: 30px;
   display: block;
@@ -1031,7 +1129,7 @@ input {
 
 .menu_aside_positions {
   width: 405px;
-  padding-left: 120px;
+  padding-left: 75px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -1044,6 +1142,7 @@ input {
 
 .menu_sort_by_price {
   margin-left: auto;
+  margin-right: 60px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1103,11 +1202,12 @@ input {
 }
 
 .menu_inside_wrapper {
-  width: 160px;
+  width: 150px;
   height: 26px;
   margin-top: 14px;
   margin-bottom: 15px;
-  margin-left: 200px;
+  margin-left: auto;
+  margin-right: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1155,18 +1255,18 @@ input {
 }
 
 .menu_dish_price {
-  font-size: 40px;
+  font-size: 35px;
   line-height: 1.2;
   font-weight: 600;
-  margin-right: 30px;
+  margin-right: 15px;
 }
 
 .menu_dish_rating_svg:not(:last-child) {
-  margin-right: 10px;
+  margin-right: 7px;
 }
 
 .menu_starts_wrapper {
-  margin-right: 40px;
+  margin-right: 20px;
 }
 
 .menu_img_container {
@@ -1175,7 +1275,8 @@ input {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  gap: 90px;
+  gap: 60px;
+  padding-right: 60px;
 }
 
 .menu_categories_list, .menu_categories_sublist {
@@ -1211,9 +1312,9 @@ input {
 }
 
 .menu_img_card {
-  width: 405px;
-  height: 650px;
-  padding-left: 23px;
+  width: 307px;
+  height: 630px;
+  padding-left: 10px;
   border: 1px solid rgb(153, 153, 153);
 }
 
@@ -1243,8 +1344,26 @@ input {
   margin-bottom: 10px;
 }
 
+.contact_title_right_part {
+  font-family: "Cormorant";
+  font-size: 45px;
+  line-height: 1.2;
+  font-weight: 700;
+  margin-bottom: 45px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.map_right_part_wrapper {
+  padding-right: 55px;
+}
+
 .contact_title {
-  font-size: 52px;
+  font-size: 45px;
   font-family: "Cormorant";
   font-weight: 700;
   line-height: 1.2;
@@ -1255,32 +1374,22 @@ input {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .contacts_left-part_wrapper {
-  margin-left: 120px;
-}
-
-.contact_title_left_part {
-  font-family: "Cormorant";
-  font-size: 52px;
-  line-height: 1.2;
-  font-weight: 700;
-  margin-bottom: 45px;
-}
-
-.contacts_point_of-location_svg {
-  position: absolute;
-  bottom: 97px;
-  left: 527px;
+  margin-left: 75px;
+  width: 500px;
 }
 
 .delivery_payment_info_wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-left: 120px;
-  margin-right: 120px;
+  margin-left: 75px;
+  margin-right: 75px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -1288,12 +1397,12 @@ input {
 }
 
 .delivery_payment_info_wrapper_left-part, .delivery_payment_info_wrapper_right-part {
-  width: 688px;
+  width: 600px;
 }
 
 .delivery_payment_title {
   font-family: "Cormorant";
-  font-size: 52px;
+  font-size: 45px;
   line-height: 1.2;
   font-weight: 700;
   margin-bottom: 45px;
@@ -1321,29 +1430,29 @@ input {
 }
 
 .about_us_history_text_higher_wrapper {
-  width: 979px;
+  width: 750px;
 }
 
 .about_us_title {
   font-family: "Cormorant";
-  font-size: 52px;
+  font-size: 42px;
   font-weight: 700;
   line-height: 1.2;
   text-align: center;
-  margin-bottom: 45px;
+  margin-bottom: 30px;
 }
 
 .about_us_history_text_higher {
-  font-size: 26px;
+  font-size: 24px;
   line-height: 1.2;
   font-weight: 400;
-  margin-bottom: 122px;
+  margin-bottom: 70px;
 }
 
 .about_us_history_losung_higher {
   text-align: center;
   font-family: "Cormorant";
-  font-size: 42px;
+  font-size: 36px;
   font-weight: 600;
   line-height: 1.2;
 }
@@ -1352,8 +1461,8 @@ input {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding-left: 120px;
-  padding-right: 120px;
+  padding-left: 75px;
+  padding-right: 75px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -1379,10 +1488,10 @@ input {
 }
 
 .about_us_left-part_losung {
-  font-size: 36px;
+  font-size: 30px;
   line-height: 1.2;
   font-weight: 600;
-  margin-bottom: 91px;
+  margin-bottom: 81px;
 }
 
 .about_us_right-part_wrapper {
@@ -1390,13 +1499,13 @@ input {
 }
 
 .about_us_restaraunt_interiror_img {
-  margin-bottom: 280px;
+  margin-bottom: 340px;
   margin-left: auto;
 }
 
 .about_us_right-part_losung {
   font-family: "Cormorant";
-  font-size: 50px;
+  font-size: 44px;
   line-height: 1.2;
   font-weight: 700;
 }
@@ -1404,5 +1513,5 @@ input {
 .about_us_chef_img {
   position: absolute;
   top: 451px;
-  right: 578px;
+  right: 424px;
 }/*# sourceMappingURL=main.css.map */

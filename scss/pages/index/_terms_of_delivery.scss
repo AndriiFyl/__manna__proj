@@ -1,29 +1,29 @@
 .terms_of_delivery__section {
-    padding-left: 120px;
-    padding-right: 120px;
+    padding-left: 75px;
+    padding-right: 75px;
     margin-bottom: 100px;
 }
 
 .terms_description {
     display: flex;
-    width: 1680px;
+    width: 1290px;
     position: relative;
 }
 
 .terms_title {
     font-family: 'Cormorant';
     font-weight: 700;
-    font-size: 82px;
+    font-size: 62px;
     line-height: 1.2;
-    margin-bottom: 45px;
+    margin-bottom: 35px;
 }
 
 .delivery_wrapper_left {
-    width: 688px;
+    width: 530px;
 }
 
 .text_description {
-    font-size: 22px;
+    font-size: 20px;
     font-weight: 300;
     line-height: 1.2;
    
@@ -39,16 +39,16 @@ margin-bottom: 35px;
 
 .terms_losung {
     display: block;
-    width: 546px;
+    width: 480px;
     font-family: 'Cormorant';
-    font-size: 42px;
+    font-size: 34px;
     font-weight: 600;
     line-height: 1.2;
-    margin-bottom: 90px;
+    margin-bottom: 70px;
 }
 
 .btn_delivery-payment {
-    width: 300px;
+    width: 250px;
     height: 75px;
     background-color: rgba(252, 185, 63, 1);
         border: 1px solid rgba(153, 153, 153, 1);
@@ -63,16 +63,17 @@ margin-bottom: 35px;
 
 
 .terms_icon_wrapper {
-    width: 350px;
-    height: 290px;
-    background-color: rgba(240, 240, 240, 1);
-    border: 1px solid grey;
+    width: 270px;
+    height: 250px;
+    border: 1px solid rgba(214, 214, 214, 1);
+    background-color: white;
     text-align: center;
+    border-radius: 5px;
 }
 
 .wrapper_order {
     position: absolute;
-    right: 547px;
+    right: 427px;
     top: 0;  
 }
 
@@ -84,14 +85,14 @@ margin-bottom: 35px;
 
 .wrapper_packing {
     position: absolute;
-    right: 742px;
+    right: 542px;
     top: 390px;
 }
 
 .wrapper_delivery {
     position: absolute;
     top: 390px;
-    right: 192px;
+    right: 152px;
 }
 
 .delivery_number_step {
@@ -103,31 +104,31 @@ margin-bottom: 35px;
 
 .step_01 {
     position: absolute;
-    right: 500px;
-    top: -55px;
+    right: 380px;
+    top: -50px;
 }
 
 .step_02 {
     position: absolute;
-        right: 349px;
-        top: 190px;
+        right: 270px;
+        top: 150px;
 }
 
 .step_03 {
     position: absolute;
-    right: 693px;
+    right: 500px;
     top: 312px;
 }
 
 .step_04 {
     position: absolute;
-    right: 126px;
+    right: 85px;
     top: 485px;
 }
 
 
 .terms_icon {
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 .terms_icon-order, .terms_icon-payment {
     margin-top: 37px; 
@@ -138,8 +139,8 @@ margin-top: 27px;
 }
 
 .title_delivery_step {
-    margin-bottom: 15px;
-    font-size: 30px;
+    margin-bottom: 10px;
+    font-size: 25px;
     font-weight: 500;
     line-height: 1.2;
 }

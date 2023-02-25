@@ -1,5 +1,20 @@
+
+
+.contact_title_right_part {
+    font-family: 'Cormorant';
+    font-size: 45px;
+    line-height: 1.2;
+    font-weight: 700;
+    margin-bottom: 45px;
+    display: flex;
+    justify-content: flex-end;
+
+}
+.map_right_part_wrapper {
+    padding-right: 55px;
+}
 .contact_title {
-    font-size: 52px;
+    font-size: 45px;
     font-family: 'Cormorant';
     font-weight: 700;
     line-height: 1.2;
@@ -8,25 +23,15 @@
 
 .contact_section_wrapper {
     display: flex;
+    justify-content: space-between;
 }
 
 .contacts_left-part_wrapper {
-    margin-left: 120px;
+    margin-left: 75px;
+    width: 500px;
 } 
   
-.contact_title_left_part {
-font-family: 'Cormorant';
-font-size: 52px;
-line-height: 1.2;
-font-weight: 700;
-margin-bottom: 45px;
-}
-       
+  
 
 
 
-.contacts_point_of-location_svg {
-    position: absolute;
-    bottom: 97px;
-    left:527px;
-}

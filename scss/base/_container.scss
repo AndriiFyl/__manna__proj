@@ -1,5 +1,30 @@
+
 .container {
-    width: 1920px;
     margin-left: auto;
     margin-right: auto;
+    // safety padding (up to 480px - responsive)
+    padding-left: 25px;
+    padding-right: 25px;
+
+
+    // mobile
+    @include mq(mobile) {
+            width: 480px;
+        }
+    
+    
+        @include mq(tablet) {
+            width: 768px;
+            padding-left: 35px;
+            padding-right: 35px;
+        }
+    
+    
+        @include mq(desktop) {
+            width: 1440px;
+            padding-left: 75px;
+            padding-right: 75px;
+        }
+       
+    
 }

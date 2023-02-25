@@ -1,54 +1,132 @@
 .our_history {
-    height: 950px;
-    position: relative;
-    display: flex;
-    margin-bottom: 100px;
+background-color: #FFFFFF;
+max-width: 480px;
+padding-top: 60px;
+
+@include mq(tablet) {
+    max-width: 768px;
+}
 }
 
-.text_history_wrapper {
-    width: 850px;
-    margin-left: 120px;
+
+.history_mob-tab_wrapper {   
+text-align: center;
+
+
+    @include mq(desktop) {
+        display: none;
+    }
 }
 
 .our_history__title {
     font-family: 'Cormorant';
-    font-size: 82px ;
     font-weight: 700;
     line-height: 1.2;
-    margin-bottom: 45px;
+    margin-bottom: 25px;
+
+
+    @include mq(mobile) {
+        font-size: 40px;
+    }
+
+    @include mq(tablet) {
+        font-size: 47px;
+    }
+
+    @include mq (not-desktop) {
+        text-align: center;
+    }
+
+    @include mq(desktop) {
+        font-size: 72px;
+        margin-bottom: 45px;
+    }
 }
 
 .our_history__text {
-    font-size: 22px;
+    display: block;
+    font-size: 14px;
     font-weight: 300;
     line-height: 1.2;
-    margin-bottom: 30px;
+    margin-bottom: 15px;
+
+
+    @include mq(tablet) {
+        font-size: 19px;
+    }
+
+    @include mq(desktop) {
+        font-size: 20px;
+    }
 }
+
+
+.history_mob-tab_imgs_list {
+    display: flex;
+    justify-content: space-between;
+    min-width: 320px;
+    max-width: 480px;
+    margin-bottom: 33px;
+    margin-left: auto;
+    margin-right: auto;
+    
+
+
+    @include mq(tablet) {
+        max-width: 768px;
+    }
+}
+
+.history_desctop_wrapper {
+    display: flex;
+    justify-content: space-between;
+    
+    @include mq(not-desktop) {
+        display: none;
+    }
+}
+
+
+.our_history__left_part {
+    width: 640px;
+    position: relative;
+}
+
 
 .text__second {
     margin-bottom: 100px;
 }
 
-
 .losung__wrapper {
-    width: 438px;
-    text-align: center;
-    margin-left: 316px;
+    width: 388px;
+    text-align: center; 
+    margin-left: auto;  
+    margin-right: auto;
 }
 
 .our_history_losung {
     font-family: 'Cormorant';
-    font-size: 42px;
+    font-size: 26px;
     font-weight: 600;
     line-height: 1.2;
     color: rgba(34, 34, 34, 1);
     text-align: center;
-    margin-bottom: 150px;
+    margin-bottom: 45px;
+
+    @include mq(tablet) {
+        font-size: 32px;
+    }
+
+    @include mq(desktop) {
+        font-size: 36px;
+        margin-bottom: 100px;
+    }
+    
 }
 
 .our_history__btn_about_us {
-    width: 300px;
-    height: 75px;
+    width: 250px;
+    height: 60px;
     font-size: 20px;
     font-weight: 700;
     line-height: 1.2;
@@ -56,22 +134,43 @@
     background-color: rgba(252, 185, 63, 1);
         border: 1px solid rgba(153, 153, 153, 1);
         border-radius: 10px;
+      
+
+        @include mq(desktop) {
+            height: 75px;
+            margin-left: auto;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+           
+        }
 
 }
 
 .dish__left__img {
-    position: absolute;
-    top: 434px;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+
+    @include mq(desktop) {
+        position: absolute;
+        top: 434px;
+        left: -75px;
+    }
 }
 
 .interior__img {
-    position: absolute;
-    top: 0;
-    right: 0;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px; 
+}
+
+.history_right_imgs_wrapper{
+    position: relative;
 }
 
 .dish__right__img {
     position: absolute;
     bottom: 0;
-    right: 437px;
+    right: 330px;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
 }
