@@ -1,3 +1,16 @@
+.menu__section {
+    background-color: #FFFFFF;
+    max-width: 480px;
+    @include mq(tablet) {
+            max-width: 768px;
+        }
+    
+        @include mq(desktop) {
+            max-width: 1440px;
+        }
+}
+
+
 .menu_container {
     text-align: center;
 }
@@ -22,12 +35,33 @@
     
 }
 
+
+.main_menu_img {
+    @include mq(mobile-only) {
+         margin-bottom: 20px; 
+    }
+  
+
+    
+}
+
+
 .menu_dishes__wrapper {
-    // min-width: 1190px;
-    // margin-bottom: 90px;  
-    // display: flex;
-    // align-items: center;
-    // position: relative;
+    margin-bottom: 40px;
+
+    @include mq(tablet-only) {
+            display: flex;
+            gap: 55px;
+            flex-wrap: wrap;
+        }
+
+@include mq(desktop) {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 80px;
+}
+   
 }
 
 .container__slider {
@@ -37,55 +71,66 @@
 
 }
 
-.slider {
-    // width: 330px;
-    // height: 490px;
-}
 
 
-.menu__slider-line {
-        // height: 490px;
-        // width: 1440px;
-        // display: flex;
-        // position: relative;
-        // gap: 100px;
-        // left: 0;
-        // transition: all ease 500ms ;
-        
 
-}
 
-.btn__arrow_right {
-    // position:absolute;
-    // top: 50%;
-    // right: 0;
 
-}
+
 
 
 
 
 .menu__btn_menu {
-        // width: 250px;
-        //     height: 75px;
-        //     text-align: center;
-        //     background-color: rgba(252, 185, 63, 1);
-        //         border: 1px solid rgba(153, 153, 153, 1);
-        //         border-radius: 10px;
-        //     font-size: 20px;
-        //     font-weight: 700;
-        //     line-height: 1.2;
-        //     margin-left: auto;
-        //     margin-right: auto;
-        //     display: block;
-        //     margin-bottom: 100px;
+        width: 230px;
+            height: 60px;
+            text-align: center;
+            background-color: rgba(252, 185, 63, 1);
+                border: 1px solid rgba(153, 153, 153, 1);
+                border-radius: 10px;
+            font-size: 18px;
+            font-weight: 700;
+            line-height: 1.2;
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+            margin-bottom:60px ;
+
+            @include mq(tablet) {
+                width: 300px;
+                height: 75px;
+                font-size: 20px;
+            }
+
+            @include mq(desktop) {
+                margin-bottom: 90px;
+            }
 }
 
 .special-dishes__wrapper {
-    // display: flex;
-    // justify-content: space-between;
+    display: flex;
+    justify-content: space-between;
+    max-width: 480px;
+    margin-left: auto;
+    margin-right: auto;
+    // gap: 10px;
+  
+
+    @include mq(tablet) {
+        max-width: 768px;
 }
 
+        @include mq(desktop) {
+            max-width: 1440px;
+        }
+
+}
+
+.desktop__picture {
+    @include mq(not-desktop) {
+        display: none;
+    }
+}
 
 .btn_slider {
     background-color: transparent;

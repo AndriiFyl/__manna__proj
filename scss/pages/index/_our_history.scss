@@ -6,8 +6,11 @@ padding-top: 60px;
 @include mq(tablet) {
     max-width: 768px;
 }
-}
 
+@include mq(desktop) {
+    max-width: 1440px;
+}
+}
 
 .history_mob-tab_wrapper {   
 text-align: center;
@@ -18,6 +21,12 @@ text-align: center;
     }
 }
 
+
+.mob-tab-head_container {
+    @include mq(desktop) {
+        display: none;
+    }
+}
 .our_history__title {
     font-family: 'Cormorant';
     font-weight: 700;
@@ -173,4 +182,14 @@ text-align: center;
     right: 330px;
     border-bottom-left-radius: 10px;
     border-top-left-radius: 10px;
+}
+
+
+.history_desktop_wrapper {
+    @include mq(not-desktop) {
+        display: none;
+    }
+
+    display: flex;
+    justify-content: space-between;
 }
