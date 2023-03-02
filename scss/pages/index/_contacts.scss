@@ -1,28 +1,55 @@
 .contacts_section {
-    margin-bottom: 100px;
-   
+background-color: #FFFFFF;
+    max-width: 480px;
+    margin-left: auto;
+    margin-right: auto;
+
+    @include mq(tablet) {
+        max-width: 768px;
+    }
+
+    @include mq(desktop) {
+        max-width: 1440px;
+    }
 }
 
+
 .contacts_title {
-    margin-left: 75px;
     font-family: 'Cormorant';
-    font-size: 72px;
+    font-size: 40px;
     font-weight: 700;
     line-height: 1.2;
     margin-bottom: 35px;
+
+    @include mq(tablet) {
+        font-size: 47px;
+    }
+
+         @include mq(desktop) {
+            font-size: 72px;
+         }
+
+
 }
 
 .contacts_wrapper {
-    padding-left: 75px;
+   display: block;
+
+
+@include mq(desktop) {
     display: flex;
     justify-content: space-between;
-    width: 1440px;
-    
+}  
 }
 
 
 .short_info:not(:last-child) {
-    margin-bottom: 30px;
+margin-bottom: 20px;
+
+    @include mq(desktop) {
+       margin-bottom: 25px; 
+    }
+    
 }
 .contacts_subtitle {
     font-size: 22px;
@@ -38,10 +65,13 @@
     margin-bottom: 5px;
 }
 
-.map_wrapper {
-    width: 830px;
-    height: 518px;
-    position: relative;
+.contacts_map_img {
+
+    @include mq(tablet-only) {
+        margin-left: auto;
+    margin-right: auto;
+    }
+    
 }
 
 .contacts_point_of-location_svg {
@@ -51,5 +81,18 @@
 }
 
 
+.info_wrapper {
+
+    @include mq(not-desktop) {
+        margin-bottom: 35px;
+    }
+}
+
+
+.contacts_container {
+    @include mq(not-desktop) {
+        text-align: center;
+    }
+}
 
 

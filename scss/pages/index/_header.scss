@@ -1,83 +1,181 @@
-// original/////////////////////////////////////////////////////////////////////////
-// .header__container {
-//     margin-top: 36px;
-//     margin-bottom: 36px;
-//     height: 58px;
-//     display: flex;
-//     padding-left: 120px;
-//     padding-right: 120px;
-//     align-items: center;
-//     background-color: rgba(111, 153, 120, 1);  
-// }
-
-// 1 -change-----------------------------------------------------------
 .header__container {
+display: flex;
+justify-content: space-between;
+align-items: center;
+background-color: rgba(111, 153, 120, 1);
+height: 123px;
+
+
+    @include mq(desktop) {
     margin-top: 36px;
-    margin-bottom: 36px;
+    margin-bottom: 36px;  
     height: 58px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    background-color: rgba(111, 153, 120, 1);
+    }
+   
+    
+}
+
+.header_desktop {
+    @include mq(not-desktop) {
+        display: none;
+    }
+}
+
+.header_mob-tab {
+    position: relative;
+    @include mq(desktop) {
+            display: none;
+        }
+}
+
+
+.header_mob-tab.open .menu__wrapper_mob-tab {
+    transform:  translateX(-100%);
+}
+
+.header_mob-tab.open .icon-burger-menu_mob-tab{
+    transition: fill 0.3s;
+fill: rgba(252, 185, 63, 1);
+}
+
+.header_mob-tab .icon-burger-menu_mob-tab {
+    transition: fill 0.3s;
+    fill: white;
+}
+
+.menu__wrapper_mob-tab {
+    padding: 25px;
+    width: 100%;
+    background-color: rgba(243, 236, 223, 1);
+    position: absolute;
+    top: 100%;
+   left: 100%;
+   transition: transform 600ms;
+}
+
+
+.header_mob-menu_close-btn {
+    margin-left: auto;
+    display: block;
+    background-color: transparent;
+}
+
+.icon-close-mobmenu:active {
+   fill: black;
 }
 
 .navigation__wrapper {
     display: flex;
+    @include mq(not-desktop) {
+    display: none;
+      
+    }
+    
 }
 
 .navigation__list {
-    display: flex;
+
+   @include mq(not-desktop) {
+    display: block;
+    height: 100vh;
+   } 
+  
+
+@include mq(desktop) {
+     display: flex;
+}
+    
 }
 
-// ///////////////////////////////////////////////////
-// .additional__functions__wrapper {
-//     display: flex;
-//     margin-left: 140px;
-//     align-items: center;
-// }
 
-// change
 .additional__functions__wrapper {
     display: flex;
     align-items: center;
+
+    @include mq(not-desktop) {
+        display: none;
+    }
 }
 
-// ///////////////////////////////////////////////
-// .restaurant__logo {
-//     font-family: 'Chonburi';
-//     font-size: 50px;
-//     font-weight: 400;
-//     line-height: 1.2;
-//     color: rgba(255, 255, 255, 1);
-//     margin-right: 85px;
-// }
-
-// change 
 .restaurant__logo {
     font-family: 'Chonburi';
-    font-size: 50px;
+    font-size: 32px;
     font-weight: 400;
     line-height: 1.2;
     color: rgba(255, 255, 255, 1);
+
+
+    @include mq(tablet) {
+        font-size: 45px;
+    }
 }
+
+.header_icons_list_mob-tab {
+    display: flex;
+    width: 150px;
+    justify-content: space-between;
+    align-items: center;
+
+
+    @include mq(tablet) {
+        width: 190px;
+    }
+}
+
+
+.icon-shop-basket_mob-tab {
+    @include mq(tablet) {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+.icon-search_mob-tab {
+    @include mq(tablet) {
+       width: 30px;
+    height: 30px;
+}  
+    }
+   
+
+.icon-burger-menu_mob-tab {
+cursor: pointer;
+
+@include mq(tablet) {
+        width: 60px;
+    height: 60px; 
+    }
+   
+}
+
+
 
 .navigation__item {
+    font-size: 44px;
     font-family: 'Cormorant';
-    font-size: 22px;
     line-height: 1.2; 
-}
-// ///////////////////////////////////////////////////
-// .navigation__item:not(:last-child) {
-//     margin-right: 90px;
-// }
+    margin-bottom: 20px;
+    
 
-// chamge--------------------------------------------------
+    @include mq(desktop) {
+      font-size: 22px;  
+    margin-bottom: 0;
+    }
+
+}
+
 .navigation__item:not(:last-child) {
     margin-right: 30px;
 }
 
 .nav__link {
-color: rgba(255, 255, 255, 1);
+color: rgba(34, 34, 34, 1);
+font-weight: 700;
+
+
+    @include mq(desktop) {
+    color: rgba(255, 255, 255, 1);    
+    }
 }
 
 .nav__link_current {
@@ -104,7 +202,7 @@ color: rgba(255, 255, 255, 1);
 .search__form {
     display: flex;
     position: relative;
-    margin-right: 37px;
+    margin-right: 32px;
 }
 
 
@@ -129,14 +227,18 @@ color: rgba(255, 255, 255, 1);
 }
 
 .icon-shop-basket {
-    margin-bottom: 0px;
-    margin-right: 37px;
+
+    @include mq(desktop) {
+      margin-bottom: 0px;
+    margin-right: 32px;
     cursor: pointer;
-}
+}  
+    }
+    
 
 
 .btn__reservation {
-    width: 180px;
+    width: 170px;
     height: 48px;
     border: 1px solid rgba(245, 194, 101, 1);
     font-family: 'Cormorant';

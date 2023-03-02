@@ -15,10 +15,89 @@
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
-    <!-- <header>
+
+
+
+
+    <header >
+ <div class="header__container header_mob-tab container">
+ <div class="restaurant__logo__wrapper">
+          <a class="restaurant__logo" href="./index.html">MANNA</a>
+  </div>
+
+
+
+<!-- mob-tab_header -->
+  <div class="header_icons_wrapper_mob-tab">
+    <ul class="header_icons_list_mob-tab">
+      <li class="header_icon">
+           <svg class="icon icon-shop-basket_mob-tab" width="31px" height="30px">
+                <use href="./images/sprite-icons.svg#icon-shop-basket"></use>
+            </svg>
+      </li>
+     
+      <li>
+         <svg class="icon icon-search_mob-tab" width="23px" height="23px" fill="white">
+                <use href="./images/sprite-icons.svg#icon-icon-search"></use>
+            </svg>
+      </li>
+
+    <li class="header_burger_btn" id="burger">
+      <svg class="icon icon-burger-menu_mob-tab" width="50px" height="50px" fill="white">
+                <use href="./images/sprite-icons.svg#icon-burger-menu"></use>
+            </svg>  
+      </li>
+</ul>
       
-      <div class="header__container container">
-        <div class="restaurant__logo__wrapper">
+
+
+<!--      mobile menu     -->
+<div class="menu__wrapper_mob-tab">
+  <button class="header_mob-menu_close-btn">
+    <svg class="icon icon-close-mobmenu" width="75px" height="75px" fill="rgba(252, 185, 63, 1)">
+                <use href="./images/sprite-icons.svg#icon-close-mobmenu"></use>
+            </svg> 
+  </button>
+  
+  
+          <ul class="navigation__list">
+            <li class="navigation__item">
+              <a class="menu__link nav__link" href="./menu.html">MENU</a>
+            </li>
+            <li  class="navigation__item">
+              <a class="about__us__link nav__link" href="./about_us.html">ABOUT US</a>
+            </li>
+            <li  class="navigation__item">
+              <a class="contacts__link nav__link" href="#contacts_section">CONTACTS</a>
+            </li>
+            <li  class="navigation__item">
+              <a class="dilivery_payment__link nav__link" href="./delivery&payment.html"
+                >DELOVERY&Payment</a
+              >
+            </li>
+
+             <li  class="navigation__item">
+              <a class="reservation__link nav__link" href=""
+                >RESERVATION</a
+              >
+            </li>
+          </ul>
+    </div>
+
+      
+  </div>
+
+       </div>
+  
+
+
+
+
+
+
+    <!-- desktop_header -->
+      <div class="header__container header_desktop container">
+       <div class="restaurant__logo__wrapper">
           <a class="restaurant__logo" href="./index.html">MANNA</a>
         </div>
         <div class="navigation__wrapper">
@@ -63,9 +142,22 @@
             <button type="button" class="btn__reservation">RESERVATION</button>
           </div>
        </div>
-        </div>
-      </div>
-    </header> -->
+      
+    </header>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     <!-- Hero ------------------------------------------------------------------------------------------------------------->
     <section class="hero__section"> 
@@ -567,21 +659,74 @@
 </div>
 </section>
 
-    <!-- RESERVATION ---------------------------------------------------------------------------------------------->
-    <!-- <section class="reservation_section container">
 
-  <h2 class="reservation_title">RESERVATION</h2>
-  <div class="reservation_wrapper">
-    
-   <div class="empty_block"></div> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- RESERVATION ---------------------------------------------------------------------------------------------->
+    <section class="reservation_section section">
+
+  
+  
+  <div class="reservation_wrapper container">
+    <h2 class="reservation_title">RESERVATION</h2>
+<div class="reservation_flex_wrapper_desktop">
+    <div class="reserve_schedule_mob-tab">
+  <h3 class="title_schedule">Working hours</h3>
+
+  <ul class="work_scedule">
+    <li class="schedule_item">
+      <p class="works_days">Monday-Friday:</p>
+    <ul>
+      <li class="works_hours">Breakfast 7:00 am - 11:00 am</li>
+      <li class="works_hours"> Lunch 11:00 am - 03:00 pm</li>
+      <li class="works_hours"> Dinner 03:00 pm - 10:00 pm</li>
+    </ul>
+    </li>
+
+
+    <li class="schedule_item">
+      <p class="works_days">Saturday-Sundey:</p>
+      <ul>
+        <li class="works_hours">Lunch 9:00 am - 03:00 pm</li>
+        <li class="works_hours"> Dinner 03:00 pm - 10:00 pm</li>
+      </ul>
+    </li>
+
+
+    <li class="schedule_item">
+       <p class="works_days">Bar hours:</p>
+    <ul>
+    <li class="works_hours">Sun - Wed 7:00 am - 10:00 pm</li>
+    <li class="works_hours">Thu - Sat 09:00 am - 11:00 pm</li>
+  </ul>
+    </li>
+  </ul>
+
+  </div>
     <img
                 class="fork_img"
                 src="./images/reservation/IMG fork reservatiom form.png"
                 alt="fork"
                 width="310px" 
                 loading="lazy" />
-  <form class="reserve_form">
 
+
+
+  <form class="reserve_form">
     <div class="inputs_wrapper">
     <fieldset class="inputs_group">
       <div class="reservation_input_wrapper">
@@ -632,12 +777,13 @@
    
   </div>
     
-
-  <button class="btn_submit_form_reservation" type="submit">Reserve a table</button>  
+<button class="btn_submit_form_reservation reserve_btn-desktop" type="submit">Reserve a table</button>  
   </form>
+    <button class="btn_submit_form_reservation reserve_btn-mob-tab" type="submit">Reserve a table</button>  
+
    
  
-<div>
+<div class="reserve_schedule_desktop">
   <h3 class="title_schedule">Working hours</h3>
 
   <ul class="work_scedule">
@@ -671,10 +817,22 @@
 
   </div>
   </div>
-</section> -->
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+
 
     <!-- Contacts ------------------------------------------------------------------------------------------------------>
-    <!-- <section class="contacts_section container" id="contacts_section">
+    <section class="contacts_section section" id="contacts_section">
+      <div class="contacts_container container">
   <h2 class="contacts_title">CONTACTS</h2>
   <div class="contacts_wrapper">
   <div class="info_wrapper">
@@ -706,25 +864,173 @@
   </div>
 
   <div class="map_wrapper">
-   <img
-                class="map__img"
-                src="./images/contacts/map.jpg"
-                alt="map"
-                width="830px"
-                height="518px" 
-                loading="lazy" />
+   <picture>
 
-                <svg class="contacts_point_of-location_svg" width="40px" height="45px">
-                  <use href="./images/sprite-icons.svg#icon-icon-location-map-contacts"></use>
-                </svg>
+    <source media="(min-width: 1440px)" 
+                srcset="./images/contacts/map.jpg 1x"
+                type="image/jpg">
+      
+                    <source media="(min-width: 768px)" 
+                srcset="./images/contacts/map_middle_1x.jpg 1x,
+                ./images/contacts/map_middle_1x.jpg 2x"
+                type="image/jpg">
+
+                <source media="(max-width: 767px)" 
+                srcset="./images/contacts/map_small_1x.jpg 1x,
+                ./images/contacts/map_small_2x.jpg 2x"
+                type="image/jpg">
+
+                 <img
+                class="contacts_map_img"
+                src="./images/contacts/map_small_1x.jpg"
+                alt="dish"
+                loading="lazy" />
+     
+   </picture>
   </div>
   </div>
-</section> -->
+
+
+ 
+  </div>
+</section>
+
+
+
+
+
+
 
     <!-- footer ------------------------------------------------------------------------------------------------------->
-    <!-- <footer class="footer container">
-  <div class="footer_wrapper">
+    <footer class="footer_section section">
+  <div class="footer_wrapper container">
 
+<!-- footer mob-tab --------------------------------------------------------->
+<div class="footer_mob-tab">
+
+
+ 
+
+
+      <div class="footer_inside_mob-tab_left-wrapper">
+         <a class="logo_footer_logo" href="./index.html"> 
+        <p >MANNA</p>
+      </a>
+        <div class="footer_social-media_mob-tab">
+
+          <!-- social media -->
+         <p class="logo_footer_media">Social media</p>
+    <ul class="media_list">
+      <li> 
+        <svg class="social_media" width="24px" height="24px">
+        <use href="./images/sprite-icons.svg#icon-icon-facebook"></use>
+      </svg>
+    </li>
+       <li> 
+        <svg class="social_media" width="24px" height="24px">
+        <use href="./images/sprite-icons.svg#icon-icon-instagram"></use>
+      </svg>
+    </li>
+       <li> 
+        <svg class="social_media" width="24px" height="24px">
+        <use href="./images/sprite-icons.svg#icon-icon-twitter"></use>
+      </svg>
+    </li>
+    </ul>
+    </div>
+
+    <!-- payment----- -->
+<div class="footer_payment_mob-tab">
+    <p class="payment_subtitle payment_subtitle_service">Payment services</p>  
+<div class="payment_service_wrapper">
+  <svg class="western_union" width="46px" height="17px">
+        <use href="./images/sprite-icons.svg#icon-icon-western-union"></use>
+  </svg>
+  <svg class="payment_visa" width="45px" height="16px">
+        <use href="./images/sprite-icons.svg#icon-icon-visa"></use>
+  </svg>
+  <svg class="payment_paypal" width="65px" height="19px">
+        <use href="./images/sprite-icons.svg#icon-icon-paypal"></use>
+  </svg>
+</div>
+</div>
+
+<!-- adress--------------------------- -->
+  <div class="adress_wrapper">
+      <address>
+        <div class="adress_row">
+          <div>
+          <svg class="icon_adress icon_adress_location" width="21px" height="24px">
+        <use href="./images/sprite-icons.svg#icon-icon-location"></use>
+      </svg>
+      </div>
+      
+      <span class="adress_text">6101 Annunciation St, New Orleans</span>
+    </div>
+        <div class="adress_row">
+          <div>
+           <svg class="icon_adress icon_adress_phone" width="23px" height="23px">
+        <use href="./images/sprite-icons.svg#icon-icon-phone"></use>
+      </svg>
+      </div>
+      <span class="adress_text">+1 504 346 - 13 - 13</span>
+    </div>
+
+    <div class="adress_row  adress_row_time">  
+      <div>
+  <svg class="icon_adress icon_adress_time" width="24px" height="24px">
+        <use href="./images/sprite-icons.svg#icon-icon-time"></use>
+  </svg>
+  </div>
+  <div>
+    <span class="adress_text">Mon - Fri 07:00 am - 10:00 pm </span> </br>
+     <span class="adress_text adress_text_last">Sat - Sun 09:00 am - 10:00 pm </span>
+  </div>
+        
+    </div>
+   
+      </address>
+    </div>
+    </div>
+
+
+
+
+    <div class="footer_inside_mob-tab_right-wrapper">
+          <div class="payment_wrapper">
+      <p class="payment_subtitle">Download our APP</p>
+      <div class="app_wraper">
+  <svg class="footer_download_icons_mob-tab_apstore  app_store" width="132px" height="48px">
+        <use href="./images/sprite-icons.svg#icon-Group-app-store"></use>
+  </svg>
+
+
+    <svg class="footer_download_icons_mob-tab_google app_google" width="136px" height="48px">
+        <use href="./images/sprite-icons.svg#icon-Group-google-play"></use>
+  </svg>
+  
+  
+
+      </div>
+    </div>
+
+
+     <div class="stock_wrapper">
+      <p class="stock_subtitle">Happy Hours</p>
+      <p class="stock_schedule">Wed - Thu 08 : 00 am - 11 : 00 pm </p>
+      <p  class="stock_subtitle">Take away - 10%</p>
+      <p  class="stock_subtitle">Free delivery from $120 order price</p>
+    </div>
+      </div>
+
+</div>
+
+
+
+
+
+<!-- footer desktop -->
+   <div class="footer_desktop">
     <div class="logo">
       
       <a class="logo_footer_logo" href="./index.html"> 
@@ -749,10 +1055,10 @@
       </svg>
     </li>
     </ul>
-    </div> -->
+    </div>
 
     <!-- adress-------------------------------------------------------------------------------------- -->
-    <!-- <div class="adress_wrapper">
+    <div class="adress_wrapper">
       <address>
         <div class="adress_row">
           <svg class="icon_adress" width="21px" height="24px">
@@ -776,10 +1082,10 @@
     </div>
     <span class="adress_text adress_text_last">Sat - Sun 09:00 am - 10:00 pm </span>
       </address>
-    </div> -->
+    </div>
 
     <!-- payment----------------------------------------------------------------------------------------- -->
-    <!-- <div class="payment_wrapper">
+    <div class="payment_wrapper">
       <p class="payment_subtitle">Download our APP</p>
       <div class="app_wraper">
   <svg class="app_store" width="136px" height="48px">
@@ -811,12 +1117,15 @@
       <p  class="stock_subtitle">Take away - 10%</p>
       <p  class="stock_subtitle">Free delivery from $120 order price</p>
     </div>
+</div> 
+<!-- ---------------------------------------------------------------------- -->
 
-  </div>
 
-
-</footer> -->
-
-    <script src="./js/slider_menu.js"></script>
+  
+</div>
+</div>
+</footer>
+    <script src="./js/mob_menu.js"></script>
+    <!-- <script src="./js/slider_menu.js"></script> -->
   </body>
 </html>

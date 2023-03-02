@@ -1,28 +1,51 @@
-.footer {
-    height: 355px;
-    background-color: rgba(111, 153, 120, 1) ;
+.footer_section {
+    max-width: 480px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgba(111, 153, 120, 1);
+    
+        @include mq(tablet) {
+            max-width: 768px;
+        }
+    
+        @include mq(desktop) {
+            max-width: 1440px;
+        }
+    
+    
 }
 
 .footer_wrapper {
-    padding-left: 50px;
-    padding-right: 50px;
-    padding-top: 70px;
+   
     display: flex;
     justify-content: space-between;
 }
 
 .adress_wrapper {
-    width: 390px;
+
+    @include mq(desktop) {
+width: 390px;
+    }
+    
 }
 
 .logo_footer_logo {
     color: rgba(255, 255, 255, 1);
     font-family: 'Chonburi';
-    font-size: 40px;
+    font-size: 32px;
     line-height: 0.8;
     font-weight: 400;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
     display: block;
+
+    @include mq(tablet) {
+            font-size: 40px;
+            margin-bottom: 50px;
+        }
+
+    @include mq(desktop) {
+        font-size: 45px;
+    }
 }
 
 .logo_footer_media {
@@ -31,12 +54,25 @@
     font-weight: 500;
     color: #FFFFFF;
     margin-bottom: 20px;
+
+    @include mq(tablet-only) {
+        margin-bottom: 35px;
+    }
 }
 
 .media_list {
-    display: flex;
-    width: 125px;
-    justify-content: space-between;
+margin-bottom: 30px;
+display: flex;
+width: 125px;
+justify-content: space-between;
+
+   @include mq(tablet-only) {
+    margin-bottom: 55px ;
+    width: 180px;
+   } 
+
+
+  
 }
 
 
@@ -45,68 +81,139 @@
     align-items: center;
 }
 
+.adress_row:not(:last-child) {
+    margin-bottom: 24px;
+
+    @include mq(tablet-only) {
+        margin-bottom: 40px;
+    }
+}
+
 .icon_adress {
     margin-right: 20px;
 }
 
 .adress_text {
-    font-size: 20px;
+  font-size: 14px;
     line-height: 1.2;
     font-weight: 400;
-    font-style: normal;
-    color: #FFFFFF;
+    font-style: normal;       
+     color: #FFFFFF;
+
+  @include mq(tablet) {
+    font-size: 16px ;
+  }
+
+  @include mq(desktop) {
+    font-size: 20px;
+  }
 }
 
 
 
-.adress_row:not(:last-child) {
-margin-bottom: 24px;
-}
+
 
 .adress_text_last {
-    margin-left: 45px;
+    @include mq(desktop) {
+       margin-left: 45px; 
+    }
+    
 }
 
 
 .payment_wrapper {
-    width: 300px;
-    margin-bottom: 24px;
+margin-bottom: 45px;
+
+@include mq(tablet-only) {
+    margin-bottom: 40px;
+}
+
+    @include mq(desktop) {
+       width: 300px;
+    }
+    
 }
 
 .payment_subtitle {
-    font-size: 22px;
-    line-height: 1.2;
+font-size: 18px;
+margin-bottom: 30px;
+line-height: 1.2;
     font-weight: 500;
-    color: #FFFFFF;
-    margin-bottom: 15px;
+    color: #FFFFFF;  
+
+    @include mq(tablet) {
+    font-size: 22px;
+   }   
 }
 
 .app_wraper {
-    display: flex;
+  @include mq(mobile-only) {
+    text-align: center;
+  }
+
+   @include mq(tablet-only) {
+       text-align: start;
+   }
+
+
+    @include mq(desktop) {
+      display: flex;
     justify-content: space-between;
-    margin-bottom: 15px;
+    margin-bottom: 15px;  
+    }
+    
 }
 
 .payment_subtitle_service {
     color: rgba(253, 213, 140, 1);
+    margin-bottom: 25px;
+   
+    @include mq(desktop) {
     margin-bottom: 15px;
+   }
 }
 
 .payment_service_wrapper {
-    width: 200px;
-    display: flex;
+ display: flex;
     justify-content: space-between;
+
+
+    @include mq(desktop) {
+       width: 200px;
+    }
+    
+   
 }
 
 .stock_wrapper {
-    width: 332px;
+    @include mq(desktop) {
+      width: 332px;  
+    }
+    
 }
 
 .stock_subtitle {
+    font-size: 18px;
     color: rgba(253, 213, 140, 1);
-    font-size: 23px;
     line-height: 1.2;
     font-weight: 600;
+
+    @include mq(tablet) {
+      font-size: 21px;  
+    }
+
+        @include mq(desktop) {
+            font-size: 23px;
+        }
+
+}
+
+.social_media {
+    @include mq(tablet-only) {
+        width: 35px;
+        height: 35px
+
+    }
 }
 
 .stock_subtitle:not(:last-child) {
@@ -114,8 +221,144 @@ margin-bottom: 24px;
 }
 
 .stock_schedule {
-    font-size: 20px;
+    font-size: 12px;
     font-weight: 300;
     margin-bottom: 25px;
     color: #FFFFFF;
+
+    @include mq(tablet) {
+        font-size: 20px;
+    }
+}
+
+
+.footer_desktop {
+    padding-top: 75px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+
+    @include mq(not-desktop) {
+        display: none;
+    }
+}
+
+.footer_mob-tab {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+    @include mq(tablet) {
+        padding-top: 48px;
+        padding-bottom: 48px;
+    }
+    @include mq(desktop) {
+            display: none;
+        }
+}
+
+.footer_inside_mob-tab_left-wrapper {
+    width: 210px;
+    @include mq(tablet) {
+       width: 330px; 
+    }
+   
+}
+
+
+.western_union {
+    @include mq(tablet-only) {
+        width: 74px;
+        height: 27px;
+    }
+}
+
+.payment_visa {
+    @include mq(tablet-only) {
+            width: 72px;
+            height: 25px;
+        }
+}
+
+
+.payment_paypal {
+    @include mq(tablet-only) {
+        width: 104px;
+        height: 30px;
+    }
+}
+
+.footer_payment_mob-tab {
+    margin-bottom: 50px;
+
+    @include mq(tablet-only) {
+        margin-bottom: 60px;
+    }
+}
+
+
+.icon_adress_location {
+
+   
+        width: 21px;
+        height: 24px;
+    
+   
+    @include mq(tablet-only) {
+        width: 35px;
+        height: 38px;
+    }
+}
+
+.icon_adress_phone, .icon_adress_time {
+   
+
+    @include mq(tablet-only) {
+            width: 35px;
+            height: 35px;
+        }
+}
+
+.adress_row_time {
+    @include mq(mobile-only) {
+        align-items: flex-start;
+    }
+}
+
+
+.footer_inside_mob-tab_right-wrapper {
+    padding-top: 79px;
+    width: 202px;
+
+    @include mq(tablet) {
+        width: 278px;
+        padding-top: 82px;
+    }
+}
+
+
+.app_store {
+    @include mq(mobile-only) {
+        margin-bottom: 15px;
+    }
+
+          @include mq(tablet-only) {
+              margin-bottom: 16px;
+          }
+}
+
+.footer_download_icons_mob-tab_google {
+    @include mq(tablet-only) {
+        width: 218px;
+        height: 87px;
+    }
+}
+
+.footer_download_icons_mob-tab_apstore {
+    @include mq(tablet-only) {
+            width: 213px;
+            height: 87px;
+        }
 }
