@@ -142,8 +142,22 @@ input {
 }
 
 .header_mob-tab.open .menu__wrapper_mob-tab {
-  -webkit-transform: translateX(-100%);
-          transform: translateX(-100%);
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+  display: block;
+}
+
+.menu__wrapper_mob-tab {
+  padding: 25px;
+  width: 100%;
+  background-color: rgb(243, 236, 223);
+  position: absolute;
+  top: 100%;
+  left: -100%;
+  -webkit-transition: -webkit-transform 600ms;
+  transition: -webkit-transform 600ms;
+  transition: transform 600ms;
+  transition: transform 600ms, -webkit-transform 600ms;
 }
 
 .header_mob-tab.open .icon-burger-menu_mob-tab {
@@ -156,19 +170,6 @@ input {
   -webkit-transition: fill 0.3s;
   transition: fill 0.3s;
   fill: white;
-}
-
-.menu__wrapper_mob-tab {
-  padding: 25px;
-  width: 100%;
-  background-color: rgb(243, 236, 223);
-  position: absolute;
-  top: 100%;
-  left: 100%;
-  -webkit-transition: -webkit-transform 600ms;
-  transition: -webkit-transform 600ms;
-  transition: transform 600ms;
-  transition: transform 600ms, -webkit-transform 600ms;
 }
 
 .header_mob-menu_close-btn {
@@ -276,10 +277,15 @@ input {
 }
 
 .navigation__item {
-  font-size: 44px;
+  font-size: 34px;
   font-family: "Cormorant";
   line-height: 1.2;
   margin-bottom: 20px;
+}
+@media screen and (min-width: 768px) {
+  .navigation__item {
+    font-size: 44px;
+  }
 }
 @media screen and (min-width: 1440px) {
   .navigation__item {

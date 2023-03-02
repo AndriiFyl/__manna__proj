@@ -8,6 +8,8 @@
     background-color: #FFFFFF;
     border: 1px solid rgba(214, 214, 214, 1);
 
+
+
     @include mq(tablet) {
         max-width: 768px;
         min-height: 816px;
@@ -27,16 +29,12 @@
         }
     }
 
+
+
 .hero_plate_mob-tab_img {
     margin-left: auto;
     margin-right: auto;
 }
-
-
-
-
-
-
 
 
 .hero_desktop_wrapper {
@@ -90,8 +88,7 @@
     @include mq(mobile) {
         display: none;
     }
-    // width: 612px;
-    // margin-left: 85px;
+  
 }
 
 .hero__title {
