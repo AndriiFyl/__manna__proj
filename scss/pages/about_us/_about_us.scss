@@ -7,40 +7,81 @@
            #DCD1BE  64.58%,
             #F3ECDF  92.19%
     );
-    padding-bottom: 100px;
+    padding-top: 20px;
+    
 }
 .about_us_history_higher-wrapper {
     display: flex;
     justify-content: space-between;
     margin-bottom: 60px;
+    text-align: center;
+    
 }
 
 .about_us_history_text_higher_wrapper {
-    width: 750px;
+
+    @include mq(desktop) {
+      width: 620px;  
+    }
+    
 }
 
 .about_us_title {
     font-family: 'Cormorant';
-    font-size: 42px;
+    font-size: 40px;
     font-weight: 700;
     line-height: 1.2;
     text-align: center;
     margin-bottom: 30px;
+
+    @include mq(tablet) {
+        font-size: 47px;
+    }
+
+    @include mq(desktop) {
+        font-size: 50px;
+    }
 }
 
 .about_us_history_text_higher {
-    font-size: 24px;
+    font-size: 16px;
     line-height: 1.2;
     font-weight: 400;
-    margin-bottom: 70px;
+    margin-bottom: 20px;
+    text-align: center;
+
+    @include mq(tablet) {
+        font-size: 20px;
+    }
+
+
+    @include mq(desktop) {
+        font-size: 24px;
+        margin-bottom: 120px;
+    }
 }
 
 .about_us_history_losung_higher {
     text-align: center;
     font-family: 'Cormorant';
-    font-size: 36px;
+    font-size: 18px;
     font-weight: 600;
     line-height: 1.2;
+    max-width: 202px;
+    min-width: 130px;
+
+    @include mq(tablet) {
+            font-size: 26px;
+            max-width: 222px;
+            min-width: none;
+        }
+
+    @include mq(desktop) {
+        font-size: 36px;
+        max-width: 500px;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 
 
@@ -63,20 +104,49 @@
 }
 
 .about_us_history_text_lower {
-    font-size: 26px;
-    line-height: 1.2;
+line-height: 1.2;
     font-weight: 400;
+    font-size: 16px;
+
+    @include mq(tablet) {
+        font-size: 22px;
+    }
+
+    @include mq(desktop) {
+     font-size: 26px;   
+    }
+    
+    
 }
 
 .about_us_history_text_lower:not(:last-child) {
-    margin-bottom: 43px;
+    margin-bottom: 20px;
+
+@include mq(desktop) {
+margin-bottom: 43px;
+}
+  
 }
 
 .about_us_left-part_losung {
-    font-size: 30px;
-    line-height: 1.2;
+font-size: 18px;
+line-height: 1.2;
     font-weight: 600;
-    margin-bottom: 81px;
+    margin-bottom: 30px;
+    text-align: center;
+
+    @include mq(tablet) {
+        font-size: 24px;
+    }
+
+
+    @include mq(desktop) {
+        margin-bottom: 81px;
+      font-size: 30px; 
+    text-align:start;
+    }
+    
+    
 }
 
 
@@ -103,3 +173,62 @@
     top: 451px;
     right: 424px;
 }
+
+.about_us_desktop_wrapper {
+    @include mq(not-desktop) {
+        display: none;
+    }
+}
+
+
+
+.about_us_mob-tab_container {
+    @include mq(desktop) {
+        display: none;
+    }
+}
+
+
+
+
+
+
+.about_us_mob_wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 25px;
+
+    @include mq(tablet-only) {
+        display: none;
+    }
+}
+
+.about_us_waiters_tab_wrapper{
+padding-bottom: 55px;
+    @include mq(mobile-only) {
+            display: none;
+        }
+  display: flex;
+  justify-content: space-between;
+  align-items: center; 
+
+    }
+
+
+    .about_us_mob_wrapper_block {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding-right: 10px;
+    }
+
+
+    .about_us_mob-tab_imgs_wrapper {
+        display: flex;
+        justify-content: space-between;
+
+
+        @include mq(tablet) {
+            justify-content:space-evenly;
+        }
+    }

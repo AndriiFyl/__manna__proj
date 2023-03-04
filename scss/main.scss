@@ -7,8 +7,12 @@
 @import './base/common';
 @import './base/reset';
 
+// components
+@import './components/mobile-menu';
 
-// pages
+
+// pages------------------------------------------------
+// main-paige>>>
 @import './pages/index/header';
 @import './pages/index/hero';
 @import './pages/index/our_history';
@@ -18,15 +22,15 @@
 @import './pages/index/contacts';
 @import './pages/index/footer';
 
-// menu
+// menu>>>
 @import './pages/menu/menu';
 
-// contact
+// contact>>>
 @import './pages/contact/contact';
 
-// delivery&payment
+// delivery&payment>>>
 @import './pages/delivery&payment/delivery&payment';
 
-// about_us
+// about_us>>>
 @import './pages/about_us/about_us';
 

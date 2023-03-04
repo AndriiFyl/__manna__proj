@@ -15,16 +15,68 @@
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
-    <header>
+
+    <header >
+ <div class="header__container header_mob-tab container">
+ <div class="restaurant__logo__wrapper">
+          <a class="restaurant__logo" href="./index.html">MANNA</a>
+  </div>
+
+
+
+<!-- mob-tab_header -->
+  <div class="header_icons_wrapper_mob-tab">
+    <ul class="header_icons_list_mob-tab">
+      <li class="header_icon">
+           <svg class="icon icon-shop-basket_mob-tab" width="31px" height="30px">
+                <use href="./images/sprite-icons.svg#icon-shop-basket"></use>
+            </svg>
+      </li>
+     
+      <li id="test_btn_open">
+         <svg class="icon icon-search_mob-tab" width="23px" height="23px" fill="white">
+                <use href="./images/sprite-icons.svg#icon-icon-search"></use>
+            </svg>
+      </li>
+
+    <li class="header_burger_btn" id="burger">
+      <svg class="icon icon-burger-menu_mob-tab" width="50px" height="50px" fill="white">
+                <use href="./images/sprite-icons.svg#icon-burger-menu"></use>
+            </svg>  
+      </li>
+</ul>
       
-      <div class="header__container container">
-        <div class="restaurant__logo__wrapper">
+  </div>
+
+
+
+
+
+       </div>
+
+
+
+
+
+
+
+      
+  
+
+
+
+
+
+
+    <!-- desktop_header -->
+      <div class="header__container header_desktop container">
+       <div class="restaurant__logo__wrapper">
           <a class="restaurant__logo" href="./index.html">MANNA</a>
         </div>
         <div class="navigation__wrapper">
           <ul class="navigation__list">
             <li class="navigation__item">
-              <a class="menu__link nav__link  " href="./menu.html">Menu</a>
+              <a class="menu__link nav__link" href="./menu.html">Menu</a>
             </li>
             <li  class="navigation__item"><a class="about__us__link nav__link nav__link_current" href="./about_us.html">About us</a></li>
             <li  class="navigation__item">
@@ -63,12 +115,15 @@
             <button type="button" class="btn__reservation">RESERVATION</button>
           </div>
        </div>
-        </div>
-      </div>
+      
     </header>
 
+
+
+
 <!-- ABOUT ------------------------------------------------------------------->
-    <section class="about_us_section container">
+    <section class="about_us_section section section_for_menu">
+      <div class="container">
       <div class="current_page_wrapper">
             <span class="current_page_home"><a href="./index.html">Home</a></span>
             <svg class="page_navigation_svg_arrow" width="30px" height="15px">
@@ -76,16 +131,265 @@
             </svg>
              <span class="current_page">About us</span>
             </div>
+      </div>
+     <!--      mobile menu     -->
+   <div class="menu__wrapper_mob-tab">
+  <button class="header_mob-menu_close-btn">
+    <svg class="icon icon-close-mobmenu" width="75px" height="75px" fill="rgba(252, 185, 63, 1)">
+                <use href="./images/sprite-icons.svg#icon-close-mobmenu"></use>
+            </svg> 
+  </button>
+  
+  
+          <ul class="navigation__list">
+            <li class="navigation__item">
+              <a class="menu__link nav__link" href="./menu.html">MENU</a>
+            </li>
+            <li  class="navigation__item">
+              <a class="about__us__link nav__link" href="./about_us.html">ABOUT US</a>
+            </li>
+            <li  class="navigation__item">
+              <a class="contacts__link nav__link" href="./contact.html">CONTACTS</a>
+            </li>
+            <li  class="navigation__item">
+              <a class="dilivery_payment__link nav__link" href="./delivery&payment.html"
+                >DELIVERY&Payment</a
+              >
+            </li>
 
+             <li  class="navigation__item">
+              <a class="reservation__link nav__link" href=""
+                >RESERVATION</a
+              >
+            </li>
+          </ul>
+    </div>
+
+
+    <!-- mobile-desktop-------------------------------- -->
+
+    <div class="about_us_mob-tab_container">
+      <div class="container">
+      <h1 class="about_us_title">OUR HISTORY</h1>
+          <p class="about_us_history_text_higher" > Joseph and Jonathan Belford established their first 
+            restaurant named MANNA in 2022 in New Orleans, Louisiana. 
+            From the very first day, the new restaurant in the city was 
+            popular. It was different from other restaurants in that
+             area, which the residents and tourists were used to
+              seeing</p>
+    </div>
+    
+
+    <div class="about_us_waiters_wrapper">
+
+
+     <div class="about_us_mob_wrapper">
+   <picture > 
+                <source 
+                 media="(max-width: 767px)" 
+                srcset="./images/about_us/small-middle_waiter_1x.jpg 1x,
+                 ./images/about_us/small-middle_waiter_2x.jpg 2x" 
+                type="image/jpg">
+
+                 <img
+                class="waiter_img"
+                src="./images/about_us/small-middle_waiter_1x.jpg"
+                alt="waiter"
+                loading="lazy" />
+              </picture>
+
+
+              <div class="about_us_mob_wrapper_block">
+                <p class="about_us_history_losung_higher">“It's essential to have a feelings for either the food
+                 or the restaurant where you are eating.”</p>
+
+                 <picture > 
+  
+                <source 
+                 media="(max-width: 767px)" 
+                srcset="./images/about_us/small_waiter_in_work_1x.jpg 1x,
+                 ./images/about_us/small_waiter_in_work_2x.jpg 2x" 
+                type="image/jpg">
+
+                 <img
+                class="waiter_in_work_img"
+                src="./images/about_us/small_waiter_in_work_1x.jpg"
+                alt="waiter_in_work"
+                loading="lazy" />
+            
+              </picture>  
+
+              </div>
+     </div>
+
+
+
+
+
+
+      <div class="about_us_waiters_tab_wrapper">
+    <picture > 
+                   <source media="(min-width: 768px)" 
+                srcset=" ./images/about_us/small-middle_waiter_1x.jpg 1x,
+                 ./images/about_us/small-middle_waiter_2x.jpg  2x" 
+                type="image/jpg">
+
+
+                <source 
+                 media="(max-width: 767px)" 
+                srcset="./images/about_us/small-middle_waiter_1x.jpg 1x,
+                 ./images/about_us/small-middle_waiter_2x.jpg 2x" 
+                type="image/jpg">
+
+                 <img
+                class="waiter_img"
+                src="./images/about_us/small-middle_waiter_1x.jpg"
+                alt="waiter"
+                loading="lazy" />
+              </picture>
+
+              <p class="about_us_history_losung_higher">“It's essential to have a feelings for either the food
+                 or the restaurant where you are eating.”</p>
+
+  <picture > 
+                   <source media="(min-width: 768px)" 
+                srcset="./images/about_us/middle_waiter_in_work_1x.jpg 1x,
+                 ./images/about_us/middle_waiter_in_work_2x.jpg  2x" 
+                type="image/jpg">
+
+
+                <source 
+                 media="(max-width: 767px)" 
+                srcset="./images/about_us/small_waiter_in_work_1x.jpg 1x,
+                 ./images/about_us/small_waiter_in_work_2x.jpg 2x" 
+                type="image/jpg">
+
+                 <img
+                class="waiter_in_work_img"
+                src="./images/about_us/small_waiter_in_work_1x.jpg"
+                alt="waiter_in_work"
+                loading="lazy" />
+            
+              </picture>  
+    </div>
+
+<div class="container"> 
+<p class="about_us_history_text_lower">The restaurant instantly became the hallmark of Annunciation Street. The quality of the products, 
+          the variety of the menu,the fastest delivery in the city made the restaurant
+          and  famous throughout New Orleans.</p>
+        <p class="about_us_history_text_lower">MANNA is not just a restaurant, it is a cozy and peaceful place with delicious food. This is a place where you can relax with your family, meet friends, and spend your holidays. </p>
+        <p class="about_us_history_text_lower">Here you can taste delicious European, American, Asian cuisine. Our barbecue offerings will impress even the most demanding guests.</p>
+        <p class="about_us_left-part_losung">Enjoy family harmony 
+          with MANNA Restaurant</p>
+      </div>
+
+      <div class="about_us_mob-tab_imgs_wrapper">
+        <picture>
+          <source
+          media="(min-width: 768px)"
+          srcset="./images/about_us/interrior_small-middle_1x.jpg 1x,
+          ./images/about_us/interrior_small-middle_2x.jpg 2x"
+          type="image/img"
+          >
+
+          <source
+          media="(max-width: 767px)"
+           srcset="./images/about_us/interrior_small-middle_1x.jpg 1x,
+          ./images/about_us/interrior_small-middle_2x.jpg 2x"
+          type="image/img">
+
+             <img
+                class="interrior_mob-tab"
+                src="./images/about_us/interrior_small-middle_1x.jpg"
+                alt="interrior"
+                loading="lazy" />
+        </picture>
+
+
+         <picture>
+             <source
+          media="(max-width: 767px)"
+           srcset="./images/about_us/chef_small_1x.jpg 1x,
+          ./images/about_us/chef_small_2x.jpg 2x"
+          type="image/img">
+
+         
+                <source
+          media="(min-width: 768px)"
+          srcset="./images/about_us/chef_middle_1x.jpg 1x,
+          ./images/about_us/chef_middle_2x.jpg 2x"
+          type="image/img"
+          >
+
+             <img
+                class="chef_mob_tab-img"
+                src="./images/about_us/chef_small_1x.jpg"
+                alt="chef"
+                loading="lazy" />
+        </picture>
+
+      </div>
+        
+    
+</div>
+
+
+
+
+    </div>
+
+  </div>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Desktop  ---------------------------------------------------------->
+<div class="about_us_desktop_wrapper">
       <div class="about_us_history_higher-wrapper">
-        <img
-        class="about_us_waiter_img"
-        alt="waiter"
-        width="294px"
-        height="450px"
-        src="./images/about_us/waiter.jpg"
-        loading="lazy"
-        />
+        <picture > 
+                <source 
+                 media="(min-width: 1440px)" 
+                srcset="./images/about_us/waiter.jpg 1x" 
+                type="image/jpg">
+
+                   <source media="(min-width: 768px)" 
+                srcset=" ./images/about_us/small-middle_waiter_1x.jpg 1x,
+                 ./images/about_us/small-middle_waiter_2x.jpg  2x" 
+                type="image/jpg">
+
+
+                <source 
+                 media="(max-width: 767px)" 
+                srcset="./images/about_us/small-middle_waiter_1x.jpg 1x,
+                 ./images/about_us/small-middle_waiter_1x.jpg 2x" 
+                type="image/jpg">
+
+                 <img
+                class="waiter_img"
+                src="./images/about_us/small-middle_waiter_1x.jpg"
+                alt="waiter"
+                loading="lazy" />
+              
+              </picture>
+
+
         <div class="about_us_history_text_higher_wrapper">
           <h1 class="about_us_title">OUR HISTORY</h1>
           <p class="about_us_history_text_higher" > Joseph and Jonathan Belford established their first 
@@ -97,12 +401,31 @@
               <p class="about_us_history_losung_higher">“It's essential to have a feelings </br> for either the food
                  or the </br> restaurant where you are eating.”</p>
         </div>
-        <img
-        class="about_us_chef-at-work_img"
-        width="294px"
-        height="450px"
-        src="./images/about_us/chef at work.jpg"
-        loading="lazy"/>
+        <picture > 
+                <source 
+                 media="(min-width: 1440px)" 
+                srcset="./images/about_us/chef_at_work.jpg 1x" 
+                type="image/jpg">
+
+                   <source media="(min-width: 768px)" 
+                srcset="./images/about_us/middle_waiter_in_work_1x.jpg 1x,
+                 ./images/about_us/middle_waiter_in_work_2x.jpg  2x" 
+                type="image/jpg">
+
+
+                <source 
+                 media="(max-width: 767px)" 
+                srcset="./images/about_us/small_waiter_in_work_1x.jpg 1x,
+                 ./images/about_us/small_waiter_in_work_2x.jpg 2x" 
+                type="image/jpg">
+
+                 <img
+                class="waiter_in_work_img"
+                src="./images/about_us/small_waiter_in_work_1x.jpg"
+                alt="waiter_in_work"
+                loading="lazy" />
+              
+              </picture>
         
       </div>
 
@@ -147,16 +470,146 @@
           src="./images/about_us/chef.jpg"/>
 
       </div>
+    </div>
+<!-- desktop ----------------------------------------------------------------------------->
+      
     </section>
 
 
 
 
     <!-- footer ------------------------------------------------------------------------------------------------------->
-<footer class="footer container">
-  <div class="footer_wrapper">
+<footer class="footer_section section">
+  <div class="footer_wrapper container">
 
+<!-- footer mob-tab --------------------------------------------------------->
+<div class="footer_mob-tab">
+
+
+ 
+
+
+      <div class="footer_inside_mob-tab_left-wrapper">
+         <a class="logo_footer_logo" href="./index.html"> 
+        <p >MANNA</p>
+      </a>
+        <div class="footer_social-media_mob-tab">
+
+          <!-- social media -->
+         <p class="logo_footer_media">Social media</p>
+    <ul class="media_list">
+      <li> 
+        <svg class="social_media" width="24px" height="24px">
+        <use href="./images/sprite-icons.svg#icon-icon-facebook"></use>
+      </svg>
+    </li>
+       <li> 
+        <svg class="social_media" width="24px" height="24px">
+        <use href="./images/sprite-icons.svg#icon-icon-instagram"></use>
+      </svg>
+    </li>
+       <li> 
+        <svg class="social_media" width="24px" height="24px">
+        <use href="./images/sprite-icons.svg#icon-icon-twitter"></use>
+      </svg>
+    </li>
+    </ul>
+    </div>
+
+    <!-- payment----- -->
+<div class="footer_payment_mob-tab">
+    <p class="payment_subtitle payment_subtitle_service">Payment services</p>  
+<div class="payment_service_wrapper">
+  <svg class="western_union" width="46px" height="17px">
+        <use href="./images/sprite-icons.svg#icon-icon-western-union"></use>
+  </svg>
+  <svg class="payment_visa" width="45px" height="16px">
+        <use href="./images/sprite-icons.svg#icon-icon-visa"></use>
+  </svg>
+  <svg class="payment_paypal" width="65px" height="19px">
+        <use href="./images/sprite-icons.svg#icon-icon-paypal"></use>
+  </svg>
+</div>
+</div>
+
+<!-- adress--------------------------- -->
+  <div class="adress_wrapper">
+      <address>
+        <div class="adress_row">
+          <div>
+          <svg class="icon_adress icon_adress_location" width="21px" height="24px">
+        <use href="./images/sprite-icons.svg#icon-icon-location"></use>
+      </svg>
+      </div>
+      
+      <span class="adress_text">6101 Annunciation St, New Orleans</span>
+    </div>
+        <div class="adress_row">
+          <div>
+           <svg class="icon_adress icon_adress_phone" width="23px" height="23px">
+        <use href="./images/sprite-icons.svg#icon-icon-phone"></use>
+      </svg>
+      </div>
+      <span class="adress_text">+1 504 346 - 13 - 13</span>
+    </div>
+
+    <div class="adress_row  adress_row_time">  
+      <div>
+  <svg class="icon_adress icon_adress_time" width="24px" height="24px">
+        <use href="./images/sprite-icons.svg#icon-icon-time"></use>
+  </svg>
+  </div>
+  <div>
+    <span class="adress_text">Mon - Fri 07:00 am - 10:00 pm </span> </br>
+     <span class="adress_text adress_text_last">Sat - Sun 09:00 am - 10:00 pm </span>
+  </div>
+        
+    </div>
+   
+      </address>
+    </div>
+    </div>
+
+
+
+
+    <div class="footer_inside_mob-tab_right-wrapper">
+          <div class="payment_wrapper">
+      <p class="payment_subtitle">Download our APP</p>
+      <div class="app_wraper">
+  <svg class="footer_download_icons_mob-tab_apstore  app_store" width="132px" height="48px">
+        <use href="./images/sprite-icons.svg#icon-Group-app-store"></use>
+  </svg>
+
+
+    <svg class="footer_download_icons_mob-tab_google app_google" width="136px" height="48px">
+        <use href="./images/sprite-icons.svg#icon-Group-google-play"></use>
+  </svg>
+  
+  
+
+      </div>
+    </div>
+
+
+     <div class="stock_wrapper">
+      <p class="stock_subtitle">Happy Hours</p>
+      <p class="stock_schedule">Wed - Thu 08 : 00 am - 11 : 00 pm </p>
+      <p  class="stock_subtitle">Take away - 10%</p>
+      <p  class="stock_subtitle">Free delivery from $120 order price</p>
+    </div>
+      </div>
+
+</div>
+
+
+
+
+
+<!-- footer desktop -->
+   <div class="footer_desktop">
     <div class="logo">
+      
       <a class="logo_footer_logo" href="./index.html"> 
         <p >MANNA</p>
       </a>
@@ -180,7 +633,8 @@
     </li>
     </ul>
     </div>
-<!-- adress-------------------------------------------------------------------------------------- -->
+
+    <!-- adress-------------------------------------------------------------------------------------- -->
     <div class="adress_wrapper">
       <address>
         <div class="adress_row">
@@ -207,7 +661,7 @@
       </address>
     </div>
 
-<!-- payment----------------------------------------------------------------------------------------- -->
+    <!-- payment----------------------------------------------------------------------------------------- -->
     <div class="payment_wrapper">
       <p class="payment_subtitle">Download our APP</p>
       <div class="app_wraper">
@@ -240,7 +694,15 @@
       <p  class="stock_subtitle">Take away - 10%</p>
       <p  class="stock_subtitle">Free delivery from $120 order price</p>
     </div>
-  </div>
+</div> 
+<!-- ---------------------------------------------------------------------- -->
+
+
+  
+</div>
+</div>
 </footer>
+
+<script src="./js/mob_menu.js"></script>
   </body>
 </html>

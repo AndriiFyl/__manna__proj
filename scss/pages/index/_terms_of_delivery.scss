@@ -1,16 +1,3 @@
-.terms_of_delivery__section {
-    background-color: #FFFFFF;
-        max-width: 480px;
-    
-        @include mq(tablet) {
-            max-width: 768px;
-        }
-    
-        @include mq(desktop) {
-            max-width: 1440px;
-        }
-    }
-    
 
 .delivery_wrapper_right {
     @include mq(not-desktop) {

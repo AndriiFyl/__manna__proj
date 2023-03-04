@@ -1,37 +1,58 @@
+.contacts_section {
+    padding-top: 30px;
+}
 
+
+.contact_title, .contact_title_right_part {
+    font-size: 40px;
+    font-family: 'Cormorant';
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 30px;
+
+    @include mq(desktop) {
+        font-size: 45px;
+        margin-bottom: 45px;
+    }
+}
 
 .contact_title_right_part {
-    font-family: 'Cormorant';
-    font-size: 45px;
-    line-height: 1.2;
-    font-weight: 700;
-    margin-bottom: 45px;
-    display: flex;
-    justify-content: flex-end;
-
-}
-.map_right_part_wrapper {
-    padding-right: 55px;
-}
-.contact_title {
-    font-size: 45px;
-    font-family: 'Cormorant';
-    font-weight: 700;
-    line-height: 1.2;
-    margin-bottom: 45px;
+    @include mq(desktop) {
+        display: flex;
+         justify-content: flex-end;
+        } 
 }
 
 .contact_section_wrapper {
+
+    @include mq(desktop) {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between;  
+    }
+    
 }
 
 .contacts_left-part_wrapper {
-    margin-left: 75px;
-    width: 500px;
+    text-align: center;
+
+
+    @include mq(desktop) {
+text-align: start;
+    }
+    
 } 
   
-  
+  .map_right_part_wrapper {
+      @include mq(not-desktop) {
+          text-align: center;
+      }
+  }
 
 
+  .map__img_map {
+    @include mq(not-desktop) {
+            margin-left: auto;
+            margin-right: auto;
+        }
+  }
 

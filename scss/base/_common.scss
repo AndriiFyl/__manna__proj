@@ -14,22 +14,35 @@ body {
 }
 
 .section {
+background-color: #FFFFFF;
 padding-bottom: 60px;
 margin-left: auto;
 margin-right: auto;
+max-width: 480px;
 
-@media screen and (min-width: 1440px) {
-    padding-bottom: 100px;
+
+@include mq(tablet) {
+        max-width: 768px;
     }
+
+    @include mq(desktop) {
+        max-width: 1440px;
+        padding-bottom: 100px;
+           
+}
 }
 
 // navigation--------------------------------------------------
 
 .current_page_wrapper {
-    margin-left: 75px;
-    margin-bottom: 50px;
+    margin-bottom: 25px;
     display: flex;
     align-items: center;
+
+
+    @include mq(desktop) {
+        margin-bottom: 50px;
+    }
 }
 
 .current_page_home {

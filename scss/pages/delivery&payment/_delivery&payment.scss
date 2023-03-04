@@ -1,24 +1,51 @@
-.delivery_payment_info_wrapper {
-    display: flex;
-    margin-left: 75px;
-    margin-right: 75px;
-    justify-content: space-between;
-    margin-bottom: 100px;
+.delivery_payment_section {
+    padding-top: 20px;
 }
 
+.delivery_payment_info_wrapper {
+
+    @include mq(desktop) {
+    display: flex;
+    justify-content: space-between;
+    }
+    
+}
+
+
+
 .delivery_payment_info_wrapper_left-part, .delivery_payment_info_wrapper_right-part {
-    width: 600px;
+    width: 100%;
+
+    @include mq(desktop) {
+      width: 600px;  
+    }
+    
 }
 
 .delivery_payment_title {
     font-family: 'Cormorant';
-    font-size: 45px;
+    font-size: 40px;
     line-height: 1.2;
     font-weight: 700;
-    margin-bottom: 45px;
+    margin-bottom: 30px;
+   
+
+
+    @include mq(desktop) {
+        font-size: 45px;
+        margin-bottom: 45px;
+    }
 }
 
 .delivery_list_rules {
     font-size: 16px;
     line-height: 1.2;
+}
+
+
+.delivery_wrapper:not(:last-child) {
+    @include mq(not-desktop) {
+        margin-bottom: 30px;
+    }
+    
 }
