@@ -186,14 +186,19 @@ margin-bottom: 35px;
 }
 
 .delivery_number_step {
+    
     font-family: 'Cormorant';
     font-weight: 700;
     line-height: 1.2;
     font-size: 82px;
     color: rgba(132, 157, 138, 1);
+
+    @include mq(not-desktop){
+cursor: pointer;
+    }
 }
 
-.step_01 {
+.step_mob.active {
 @include mq(not-desktop) {
     border-bottom: 3px solid black;
     color: black;

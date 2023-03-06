@@ -1086,15 +1086,20 @@ input {
   font-size: 82px;
   color: rgb(132, 157, 138);
 }
+@media screen and (max-width: 1439.98px) {
+  .delivery_number_step {
+    cursor: pointer;
+  }
+}
 
 @media screen and (max-width: 1439.98px) {
-  .step_01 {
+  .step_mob.active {
     border-bottom: 3px solid black;
     color: black;
   }
 }
 @media screen and (min-width: 1440px) {
-  .step_01 {
+  .step_mob.active {
     position: absolute;
     right: 380px;
     top: -50px;
