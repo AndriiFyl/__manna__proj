@@ -416,16 +416,21 @@
     <section class="menu__section section">
     <div class="menu_container container">
     <h2 class="menu__title">MENU</h2>
+
+
+
+
     <div class="menu_dishes__wrapper">
      
-     
-  
-      
         <button class="btn_slider btn__arrow_left" type="button">
         <svg class="icon icon-Arrow-left-MENU" width="70px" height="42px">
           <use href="./images/sprite-icons.svg#icon-left-arrow"></use>
         </svg>
       </button>
+      
+
+      <div class="menu_imgs_wrapper"> 
+      <div class="menu_imgs_container">
           <picture>
 
             <source media="(min-width: 1440px)" 
@@ -504,6 +509,94 @@
                 alt="breakfast"
                 loading="lazy" />
               </picture> 
+
+
+              <picture>
+
+            <source media="(min-width: 1440px)" 
+                srcset="./images/menu/Menu_Breakfast_blur.jpg 1x" 
+                type="image/jpg">
+
+                   
+                <source media="(min-width: 768px)" 
+                srcset="./images/menu/Middle_breakfast_1x.jpg 1x,
+                 ./images/menu/Middle_breakfast_2x.jpg 2x" 
+                type="image/jpg">
+
+
+                <source media="(max-width: 767px)" 
+                srcset="./images/menu/Small_Menu_Breakfast_1x.jpg 1x,
+                 ./images/menu/Small_Menu_Breakfast_2x.jpg 2x" 
+                type="image/jpg">
+
+    
+                 <img
+                class="main_menu_img breakfast__img"
+                src="./images/menu/Small_Menu_Breakfast_1x.jpg"
+                alt="breakfast"
+                loading="lazy" />
+              </picture> 
+
+               <picture>
+
+                <source media="(min-width: 1440px)" 
+                srcset="./images/menu/Menu_Lunch_blur.jpg 1x" 
+                type="image/jpg">
+
+                 <source media="(min-width: 768px)" 
+                srcset="./images/menu/Middle_Lunch_1x.jpg 1x,
+                 ./images/menu/Middle_Lunch_2x.jpg 2x" 
+                type="image/jpg">
+
+
+                <source media="(max-width: 767px)" 
+                srcset="./images/menu/Small_Menu_Lunch_1x.jpg 1x,
+                 ./images/menu/Small_Menu_Lunch_2x.jpg 2x" 
+                type="image/jpg">
+
+                 <img
+                class="main_menu_img breakfast__img"
+                src="./images/menu/Small_Menu_Lunch_1x.jpg"
+                alt="breakfast"
+                loading="lazy" />
+              </picture> 
+
+
+               <picture>
+                 <source media="(min-width: 1440px)" 
+                srcset="./images/menu/Menu_Dinner_blur.jpg 1x" 
+                type="image/jpg">
+
+                 <source media="(min-width: 768px)" 
+                srcset="./images/menu/Middle_Dinner_1x.jpg 1x,
+                 ./images/menu/Middle_Dinner_2x.jpg 2x" 
+                type="image/jpg">
+              
+                <source media="(max-width: 767px)" 
+                srcset="./images/menu/Small_Menu_Dinner_1x.jpg 1x,
+                 ./images/menu/Small_Menu_Dinner_2x.jpg 2x" 
+                type="image/jpg">
+
+             
+                <source media="(min-width: 768px)" 
+                srcset="./images/menu/Middle_Dinner_1x.jpg 1x,
+                 ./images/menu/Middle_Dinner_2x.jpg 2x" 
+                type="image/jpg">
+
+                 <img
+                class="main_menu_img breakfast__img"
+                src="./images/menu/Small_Menu_Dinner_1x.jpg"
+                alt="breakfast"
+                loading="lazy" />
+              </picture> 
+
+            
+    
+
+    
+
+              </div>
+          </div>
 
                  <button class="btn_slider btn__arrow_right" type="button">
           <svg class="icon icon-Arrow-right-Menu" width="70px" height="42px">
@@ -590,6 +683,8 @@
                 alt="dish"
                 loading="lazy" />
      </picture>
+
+     
 
 
       <picture class="desktop__picture">
@@ -1199,6 +1294,7 @@
     <script src="./js/mob_menu.js"></script>
     <script src="./js/mob-menu_list.js"></script>
     <script src="./js/terms_delivery_slider.js"></script>
+    <script src="./js/desktop_menu_slider.js"></script>
     <!-- <script src="./js/slider_menu.js"></script> -->
   </body>
 </html>

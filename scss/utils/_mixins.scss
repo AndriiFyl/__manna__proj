@@ -40,6 +40,12 @@
         }
     }
 
+        @if $type =='desktop-only' {
+            @media screen and (min-width: $desktop) {
+                @content;
+            }
+        }
+
     @if $type =='not-desktop' {
         @media screen and (max-width: #{$desktop - 0.02}) {
             @content;

@@ -36,29 +36,48 @@
 .menu_dishes__wrapper {
     margin-bottom: 40px;
 
-    @include mq(tablet-only) {
-            display: flex;
-            gap: 55px;
-            flex-wrap: wrap;
-        }
+    // @include mq(tablet-only) {
+    //         display: flex;
+    //         gap: 55px;
+    //         flex-wrap: wrap;
+    //     }
 
 @include mq(desktop) {
     display: flex;
     justify-content: space-between;
     width: 100%;
     margin-bottom: 80px;
+    align-items: center;
 }
    
 }
 
-.container__slider {
-    // min-width: 1190px;
-    // margin-left: 60px;
-    // overflow: hidden;
 
+.menu_imgs_wrapper {
+    @include mq(desktop) {
+        width: 1000px;
+        height: 368px;
+        overflow: hidden;
+    }
 }
 
 
+.menu_imgs_container {
+    @include mq(tablet-only) {
+            display: flex;
+            gap: 50px;
+            flex-wrap: wrap;
+        }
+
+    @include mq(desktop) {
+        position: relative;
+            left: 0;
+            transition: all ease 1s;
+            display: flex;
+            gap: 50px;
+            width: 5000px;
+        }
+}
 
 
 
