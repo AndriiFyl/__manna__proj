@@ -232,8 +232,8 @@
   
   
           <ul class="navigation__list">
-            <li class="navigation__item">
-              <a class="menu__link nav__link" href="./menu.html">MENU</a>
+            <li class="navigation__item" id="mob-menu_list_opener">
+              <a class="menu__link nav__link" href="#">MENU</a>
             </li>
             <li  class="navigation__item">
               <a class="about__us__link nav__link" href="./about_us.html">ABOUT US</a>
@@ -254,6 +254,47 @@
             </li>
           </ul>
     </div>
+
+
+
+
+<!-- mob-menu_list -->
+   <div class="mob-menu_list_wrapper">
+    <button class="mob-list_close-btn">
+    <svg class="icon icon-close-mobmenu" width="75px" height="75px" fill="rgba(252, 185, 63, 1)">
+                <use href="./images/sprite-icons.svg#icon-close-mobmenu"></use>
+            </svg> 
+  </button>
+    <p class="menu_aside_header">Categories</p>
+    <div class="mob-menu_list_container">
+    <ul class="menu_categories_list">
+                <li class="menu_categories_item"><a class="menu_link_category" href="#">Breakfast</a></li>
+                <li class="menu_categories_item"><a class="menu_link_category" href="#">Lunch</a></li>
+                <li class="menu_categories_item"><a class="menu_link_category" href="#">Dinner</a></li>
+                <li class="menu_categories_item"><a class="menu_link_category" href="#">Vegan Menu</a></li>
+                <li class="menu_categories_item"><a class="menu_link_category" href="#">Kids Menu</a></li>
+                <li class="menu_categories_item"><a class="menu_link_category" href="#">Drinks</a></li>
+                <li class="menu_categories_item"><a class="menu_link_category" href="#">Bar & Launge</a></li>
+                <li class="menu_categories_item"><a class="menu_link_category" href="#">Additions</a></li>
+            </ul>
+
+
+
+            <ul>
+  <li class="menu_categories_item"><a class="menu_link_category" href="#">Promotions</a></li>
+                <li class="menu_categories_item"><a class="menu_link_category" href="#"">Happy hours</a></li>
+                <li class="menu_categories_item"><a class="menu_link_category" href="#">New</a></li>
+                 <li class="menu_categories_item"><a class="menu_link_category" href="#">For BIG Company</a></li>
+                <li class="menu_categories_item"><a class="menu_link_category" href="#">For TWO</a></li>
+                <li class="menu_categories_item"><a class="menu_link_category" href="#">For ALL family</a></li>
+                <li class="menu_categories_item"><a class="menu_link_category" href="#">Exclusive from </br> Chef's</a></li>
+              </ul>
+</div>
+
+
+   </div>
+
+
   </section>
 
 
@@ -1126,6 +1167,7 @@
 </div>
 </footer>
     <script src="./js/mob_menu.js"></script>
+    <script src="./js/mob-menu_list.js"></script>
     <!-- <script src="./js/slider_menu.js"></script> -->
   </body>
 </html>
